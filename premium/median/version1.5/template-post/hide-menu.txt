@@ -1,0 +1,26 @@
+
+
+@media screen and (min-width:897px){
+.mainWrapper .mainInner, .mainWrapper footer{margin-left:68px}
+.mainMenu{width:68px}
+.mainMenu #LinkList002, .htmlMenu .close{width:calc(68px - var(--nav-border))}
+.mainMenu #LinkList002 ul, .htmlMenu .link .name, .htmlMenu .link svg.down{display:none}
+.mainMenu #LinkList002 label{display:flex; opacity:1;visibility:visible}
+.htmlMenu a.link:hover{background-color:transparent}
+.htmlMenu .dropMenu:checked ~ ul li{max-height:0; opacity:0;visibility:hidden}
+.htmlMenu > li.break:after{width:calc(100% - 44px);margin-left:25px}
+
+.navInput:checked ~ .mainWrapper .mainInner, .navInput:checked ~ .mainWrapper footer{margin-left:var(--nav-width)}
+.navInput:checked ~ .mainWrapper .mainMenu{width:var(--nav-width)}
+.navInput:checked ~ .mainWrapper .htmlMenu .close,
+.navInput:checked ~ .mainWrapper .mainMenu #LinkList002{width:calc(var(--nav-width) - var(--nav-border))}
+.navInput:checked ~ .mainWrapper .mainMenu #LinkList002 ul{display:flex}
+.navInput:checked ~ .mainWrapper .mainMenu #LinkList002 label{display:none; opacity:0;visibility:hidden}
+.navInput:checked ~ .mainWrapper .htmlMenu a.link:hover{background-color:var(--transparent-bg)}
+.navInput:checked ~ .mainWrapper .htmlMenu .link .name,
+.navInput:checked ~ .mainWrapper .htmlMenu .link svg.down{display:block}
+.navInput:checked ~ .mainWrapper .htmlMenu .dropMenu:checked ~ ul li{max-height:40px; opacity:1;visibility:visible}
+.navInput:checked ~ .mainWrapper .htmlMenu > li.break:after{width:calc(100% - 44px);margin-left:25px}
+.darkMode .mainWrapper .htmlMenu a.link:hover{background-color:transparent}
+.darkMode .navInput:checked ~ .mainWrapper .htmlMenu a.link:hover{background-color:rgba(255,255,255,.1)}
+}

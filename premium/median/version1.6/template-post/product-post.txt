@@ -1,0 +1,64 @@
+<div class='separator'>
+  <img alt='title_here' src='image_url_here'/>
+</div>
+
+<!--[ Price to show in homepage ]-->
+<div class='pPric pPad' data-text='Price'>Rp. 200.000</div>
+<!--more-->
+
+<div class='pInfo pPad'>
+  <div class='L'><small>Size</small><span>Small, Medium, Large, X Large</span></div>
+  <div class='R'><small>Color</small><span>Merah, Kuning, HIjau, Biru</span></div>
+</div>
+<div class='pInfo o pPad'><small>Sample</small><span>Nullam congue euismod euismod, mauris lacinia pellentesque vehicula</span></div>
+
+<div class='pMart'>
+  <small>atau Belanja melalui '<b>Market Place</b>' favorit anda :</small>
+  
+  <!--[ Change attribute href='#' to add url ]-->
+  <a title='Tokopedia' href='#' target='_blank' rel='noopener'>
+    <img class='lazy' data-src='https://cdn.statically.io/favicons/tokopedia.com' src='data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs='>
+  </a>
+  <a title='Bukalapak' href='#' target='_blank' rel='noopener'>
+    <img class='lazy' data-src='https://cdn.statically.io/favicons/bukalapak.com' src='data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs='>
+  </a>
+  <a title='Shopee' href='#' target='_blank' rel='noopener'>
+    <img class='lazy' data-src='https://cdn.statically.io/favicons/shopee.co.id' src='data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs='>
+  </a>
+  <a title='Lazada' href='#' target='_blank' rel='noopener'>
+    <img class='lazy' data-src='https://cdn.statically.io/favicons/lazada.co.id' src='data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs='>
+  </a>
+</div>
+
+<!--[ Active function ]-->
+<input class='tbIn hidden' id='fTabs-1' type='radio' name='postTabs' checked>
+<input class='tbIn hidden' id='fTabs-2' type='radio' name='postTabs'>
+<input class='tbIn hidden' id='fTabs-3' type='radio' name='postTabs'>
+
+<!--[ Tabs header/title, replace class attribute to class='tbHd scrlH stick' if you want to create a floating tab title ]-->
+<div class='tbHd scrlH'>
+  <!--[ Change atribute data-text='...' to replace tabs title ]-->
+  <label for='fTabs-1' data-text='Deskripsi'></label>
+  <label for='fTabs-2' data-text='Pengiriman'></label>
+  <label for='fTabs-3' data-text='Keterangan'></label>
+</div>
+
+<div class='tbCn'>
+  <!--[ Tabs content ]-->
+  <div class='tbText-1'>
+    First tab here... 
+
+  </div>
+  
+  <!--[ Tabs content ]-->
+  <div class='tbText-2'>
+    Second tab here...
+  
+  </div>
+  
+  <!--[ Tabs content ]-->
+  <div class='tbText-3'>
+    Third tab here...
+
+  </div>
+</div>

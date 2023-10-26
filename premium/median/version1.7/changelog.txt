@@ -1,0 +1,32 @@
+CHANGELOG:
+
+Median UI, Jan 01. 2023
+-----------------------
+- [Enable] Define your own design, more colors and backgrounds can be changed through Customize Blogger Theme.
+- [Enable] Resize the header logo via Customize Blogger Theme.
+- [Added] Bookmark this post | igniel.com
+- [Added] Copy to clipboard button on Syntax Highlighter.
+- [Added] normalize.css v8.0.1 | github.com/necolas/normalize.css
+- [Added] New post components: Guide list, Pros/cons list, Manual lightbox image.
+- [Added] More style options on table.
+- [Added] List of labels at the end of the post.
+- [Optimized] darkMode v2.0, added dark mode option based on default system.
+- [Optimized] timeAgo v2.0, Easier to choose timestamp format.
+- [Optimized] Product post v2.0, Added discount options from 10% to 90%.
+- [Optimized] Widget Slider v2.0.
+- [Optimized] Easier to learn documentation.
+- [Optimized] Simplified code structure writing.
+- [Improved] Change the placement of Profile widgets.
+- [Improved] Easier to change some default text, now some text can be changed via Blogger Layout.
+- [Improved] Partially hide too long description profile.
+- [Improved] Moved the Blogger comments column to the first section.
+- [Improved] Completely uses Iconsax | vuesax.com.
+- [Removed] Auto lightbox image feature, now this feature has to be added manually.
+- [Removed] Sitemap on staticPage.
+- [Removed] Split post feature.
+- [Removed] The Contact Form widget on a static page.
+- [Fixed] Some widget layouts didn't fit when re-added.
+- [Fixed] Can't add link to image in post.
+- [Fixed] Improvements to JSON schema, added alternative profile and photo urls to avoid errors.
+- [Fixed] Incorrect thumbnail size on Safari browser.
+- [Fixed] Known/reported bugs.

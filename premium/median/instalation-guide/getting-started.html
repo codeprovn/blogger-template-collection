@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <meta charset='UTF-8'/>
+        <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
+        
+        <!--[ Favicon ]-->
+        <link href='file/img/fav.ico' rel='apple-touch-icon' sizes='152x152'/>
+        <link href='file/img/fav.ico' rel='icon' type='image/x-icon'/>
+        <link href='file/img/fav.ico' rel='shortcut icon' type='image/x-icon'/>
+      
+        <style>
+            /* Varriable */
+            :root{
+                --fontSize: 14px ;
+                --fontHead: 'Fira Sans', sans-serif ;
+                --fontBody: 'Noto Sans', sans-serif ;
+                --fontCode: 'Fira Mono', sans-serif ;
+                --head-H1: 2rem ;
+                --head-H2: 1.95rem ;
+                --head-H3: 1.75rem ;
+                --head-H4: 1.65rem ;
+                --head-H5: 1.6rem ;
+                --head-H6: 1.5rem ;
+                --head-fontWg: 700 ;
+                --themeLink: #272eb5 ; 
+                --themeC: #0e2045 ;
+                --themeC-alt: #0e2045cc ; /* cc mean's opacity 80% */
+                --themeBg: #fffdfc ;
+                --themeBg-alt: #f9f9fb ;
+                --themeBg-sec: #f8f8f8 ; 
+                --themeBg-pop: rgb(14 20 27 / 30%) ;
+                --themeBd-color: #323232 ;
+                /* var: Basic, button, input */
+                --vHeight: 100vh ;
+                --selectC: #fffdfc ;
+                --selectBg: var(--themeLink) ;
+                --placeHolder: var(--themeC-alt) ;
+                --inputC: currentColor ;
+                --inputBg: var(--themeBg) ;
+                /* var: Icons */
+                --iconWidth: 35px ;
+                --iconHeight: 35px ;
+                /* var: Transition */
+                --tDuration: .1s ease ;
+                --tShowHide: opacity var(--tDuration), visibility var(--tDuration) ;
+                /* var: Content */
+                --content-maxWidth: 1220px ;
+                --contentPage-maxWidth: 860px ;
+                --contentPop-maxWidth: 768px ;
+                --contentPadding: 22px ;
+                --contentPadding-minus: -22px ;
+                --contentSpace: 40px ;
+                --contentC: currentColor ;
+                --contentC-alt: rgb(117 117 117) ;
+                --contentBg: var(--themeBg) ;
+                --contentBg-alt: var(--themeBg-alt) ;
+                --contentBg-sec: var(--themeBg-sec) ;
+                --contentBd-line: 1px ;
+                --contentBd-radius: 4px ;
+                --contentBd-radiusA: 10px ;
+                --contentBd-color: var(--themeBd-color) ;
+                /* var: Post typo */
+                --postBreak: 3em ;
+                --postImageBd-radius: 2px;
+                --lineHeight: 1.7 ;
+                --lineSpacing: 1.8em ;
+                /* var: Post component */
+                --noteAfter: '\002A'  ;
+                --warnAfter: '\0021' ;
+                --noteC: #272eb5 ;
+                --noteBg: #e8f0fe ;
+                --warnC: #e51661 ;
+                --warnBg: #fce8e8 ; /*#fef5fa*/
+                --stepC: var(--themeBd-color) ; /* #3740ff */
+                --stepHover: #fffdfc ;
+                /* var: Header */
+                --headerText-after: 'Docs' ;
+                --headerHeight: 80px ;
+                --headerHeight-min: -80px ;
+                --headerHeight-phone: 80px ;
+                --header-font: 1.143em ;
+                --header-fontWg: 500 ;
+                --headerC: currentColor ;
+                --headerBg: var(--themeBg) ;
+            }
+
+            /* Font: Body + Heading, Noto Sans(Latin) by Google */ @font-face {font-family:'Noto Sans'; font-style:italic;font-weight:400;font-display:swap; src:url(file/fonts/noto_italic_400.woff2) format('woff2'); unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD} @font-face {font-family:'Noto Sans'; font-style:italic;font-weight:500;font-display:swap; src:url(file/fonts/noto_italic_500.woff2); unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD} @font-face {font-family:'Noto Sans'; font-style:italic;font-weight:600;font-display:swap; src:url(file/fonts/noto_italic_600.woff2) format('woff2'); unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD} @font-face {font-family:'Noto Sans'; font-style:italic;font-weight:700;font-display:swap; src:url(file/fonts/noto_italic_700.woff2) format('woff2'); unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD} @font-face {font-family:'Noto Sans'; font-style:normal;font-weight:400;font-display:swap; src:url(file/fonts/noto_reg_400.woff2) format('woff2'); unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD} @font-face {font-family:'Noto Sans'; font-style:normal;font-weight:500;font-display:swap; src:url(file/fonts/noto_reg_500.woff2) format('woff2'); unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD} @font-face {font-family:'Noto Sans'; font-style:normal;font-weight:600;font-display:swap; src:url(file/fonts/noto_reg_600.woff2) format('woff2'); unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD} @font-face {font-family:'Noto Sans'; font-style:normal;font-weight:700;font-display:swap; src:url(file/fonts/noto_reg_700.woff2) format('woff2'); unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+
+            /* Font: Body + Heading(Alternative), Fira Sans(Latin) by Google */ @font-face {font-family:'Fira Sans'; font-style:italic;font-weight:400;font-display:swap; src:url(file/fonts/fira_italic_400.woff2) format('woff2'); unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD} @font-face {font-family:'Fira Sans'; font-style:italic;font-weight:500;font-display:swap; src:url(file/fonts/fira_italic_500.woff2) format('woff2'); unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD} @font-face {font-family:'Fira Sans'; font-style:italic;font-weight:600;font-display:swap; src:url(file/fonts/fira_italic_600.woff2) format('woff2'); unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD} @font-face {font-family:'Fira Sans'; font-style:italic;font-weight:700;font-display:swap; src:url(file/fonts/fira_italic_700.woff2) format('woff2'); unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD} @font-face {font-family:'Fira Sans'; font-style:normal;font-weight:400;font-display:swap; src:url(file/fonts/fira_reg_400.woff2) format('woff2'); unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD} @font-face {font-family:'Fira Sans'; font-style:normal;font-weight:500;font-display:swap; src:url(file/fonts/fira_reg_500.woff2) format('woff2'); unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD} @font-face {font-family:'Fira Sans'; font-style:normal;font-weight:600;font-display:swap; src:url(file/fonts/fira_reg_600.woff2) format('woff2'); unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD} @font-face {font-family:'Fira Sans'; font-style:normal;font-weight:700;font-display:swap; src:url(file/fonts/fira_reg_700.woff2) format('woff2'); unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+            
+            /* Font: Source code, Fira Mono(Latin) by Google */ @font-face {font-family:'Fira Mono'; font-style:normal;font-weight:400;font-display:swap; src:url(file/fonts/fira_mono_reg_400.woff2) format('woff2'); unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+            
+            /*! normalize.css v8.0.1 - modified for Jagodesain.com at 14px | MIT License | github.com/necolas/normalize.css*/ html{line-height:1.15;-webkit-text-size-adjust:100%} body{margin:0} main{display:block} h1{font-size:2em;margin:.67em 0} hr{box-sizing:content-box;overflow:visible} pre{font-family:monospace, monospace;font-size:.82em} a{background-color:transparent} abbr[title]{border-bottom:none;text-decoration:underline} b, strong{font-weight:bolder} code, kbd, samp{font-family:monospace, monospace;font-size:.88em} small{font-size:80%} sub, sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline} sub{bottom:-.25em} sup{top:-.5em} img{border-style:none} button, input, optgroup, select, textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0;outline:0} button, input{overflow:visible} button, select{text-transform:none} button, [type=button], [type=reset], [type=submit]{-webkit-appearance:button} button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner{border-style:none;padding:0} button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring{outline:1px dotted ButtonText} fieldset{padding:.35em .75em .625em} legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal} progress{vertical-align:baseline} textarea{overflow:auto} [type=checkbox], [type=radio]{padding:0} [type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto} [type=search]{-webkit-appearance:textfield;outline-offset:-2px} [type=search]::-webkit-search-decoration{-webkit-appearance:none} ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit} details{display:block} summary{display:list-item} template{display:none} [hidden], .hidden{display:none}
+            
+            /* Basic: CSS */ ::selection{color:var(--selectC);background-color:var(--selectBg); opacity:.85} ::placeholder{color:var(--placeHolder)} ::before, ::after, *{-webkit-box-sizing:border-box;box-sizing:border-box} html{scroll-behavior:smooth;overflow-x:hidden; font:var(--fontSize) var(--fontBody)} body{position:relative; min-height:100dvh; margin:0;padding:0 !important; color:var(--themeC);background-color:var(--themeBg); -webkit-font-smoothing: antialiased} h1, h2, h3, h4, h5, h6{margin-block:.67em; font:var(--head-fontWg) 1.4rem/1.4 var(--fontHead); color:currentColor} h1{font-size:var(--head-H1)} h2{font-size:var(--head-H2)} h3{font-size:var(--head-H3)} h4{font-size:var(--head-H4)} h5{font-size:var(--head-H5)} h6{font-size:var(--head-H6)} a{color:var(--themeLink);text-decoration:none} a:hover{filter:brightness(.9);transition:filter .1s} table{border-spacing:0} iframe{width:100%;border:0;margin-inline:auto} img{display:inline-block;max-width:100%;height:auto} svg{width:24px;height:24px; fill:currentColor} svg.line, svg .line{fill:none; stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.25} .invisible{opacity:0;visibility:hidden} .clear{width:100%;display:block;margin:0;padding:0;float:none;clear:both} .break{word-break:break-word}
+            
+            /* Basic: input and details tag */ input{color:var(--inputC);background-color:var(--inputBg)} details summary.n, details.sp summary, details.ac summary{list-style:none;outline:none; cursor:default} details summary.n::-webkit-details-marker, details.sp summary::-webkit-details-marker, details.ac summary::-webkit-details-marker{display:none} 
+
+            /* Basic: function */ .fc::after{content:''; display:block; position:fixed;top:0;left:0;right:0;bottom:0; z-index:1; transition:background var(--tDuration), var(--tShowHide), backdrop-filter var(--tDuration); background-color:transparent;opacity:0;visibility:hidden} .extL::after{content:''; display:inline-block; width:14px;height:14px;margin-inline-start:5px; background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23989b9f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><line x1='7' y1='17' x2='17' y2='7'/><polyline points='7 7 17 7 17 17'/></svg>") center / 16px no-repeat} .noList, .noList ul, .noList ol{list-style:none;margin:0;padding:0} .noWrap{white-space:nowrap} .ellips{white-space:nowrap;overflow:hidden;text-overflow:ellipsis} .cInherit a{color:inherit} .cInherit.u a:hover{text-decoration:underline} .bgInherit{background-color:inherit} .bgAlt{background-color:var(--themeBg-alt)} .clamp{/*display:-webkit-box;*/ -webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden} .strike{text-decoration:line-through} .flex{display:flex} .flex.center{align-items:center;justify-content:center} .flex.column{flex-direction:column} .flex.wrap{flex-wrap:wrap} .flex.space-between{justify-content:space-between} .flex.baseline{align-items:baseline} .flexIn{display:inline-flex} .flexIn.baseline{align-items:baseline} .flexIn.center{align-items:center} .shrink{flex-shrink:0} .grow{flex-grow:1} .opacity{opacity:.8}
+            
+            /* Icon and SVG */ .ic{display:inline-flex;flex-shrink:0;align-items:center;justify-content:center; min-width:var(--iconWidth);height:var(--iconHeight)} .op svg{opacity:.8} .i12 svg{flex-shrink:0; width:12px;height:12px} .i14 svg{flex-shrink:0; width:14px;height:14px} .i16 svg{flex-shrink:0; width:16px;height:16px} .i18 svg{flex-shrink:0; width:18px;height:18px} .i20 svg{flex-shrink:0; width:20px;height:20px} .i22 svg{flex-shrink:0; width:22px;height:22px} .i28 svg{flex-shrink:0; width:28px;height:28px}
+
+            /* Font style */ .fontM{font-size:.93em} .fontS{font-size:small} .fontSm{font-size:smaller} .fontB{font-family:var(--fontBody)} .fontBa{font-family:var(--fontBody-alt)} .fontC{font-family:var(--fontCode)}
+            
+            /* Basic: element */
+            .max{margin-inline:auto;padding-inline:var(--contentPadding);max-width:var(--content-maxWidth)}
+            .mi{--aside:300px; --asideM:250px}
+            .mi .max:not(.s) >*{padding-block:5rem}
+            .wp{min-height:inherit; background-color:var(--contentBg-sec)}
+            .co{position:sticky; inset-block-start:calc(var(--headerHeight) /2 )}
+            .co::before{content:attr(data-text); display:block;margin-bottom:12px}
+            
+            /* header */ header{height:var(--headerHeight); position:relative;color:var(--headerC);background:var(--headerBg);z-index:1} header::after{content:''; position:absolute;inset-inline:0;inset-block-end:0;border-block-end:1px solid var(--contentBd-color)} header .max{--gap:15px; align-items:center; height:100%} header .headT{font-weight: var(--header-fontWg);font-size: var(--header-font)} header .headTitle{display:block} header .headTitle::after{content: var(--headerText-after); display:inline-block;font-weight: 400;font-size: 11px;line-height: 14px;color:var(--contentC-alt)}
+            
+            /* footer */ footer{position:relative;margin-block-start:auto;padding-block:25px; color:var(--contentC)} footer .credits{gap:10px;align-items:center} footer .credit{display:inline} footer .credit .cd::before{content:'\00A9'} footer .credit bdi{font-weight:500} footer .footM{margin-inline-start:15px; color:var(--contentC-alt)} footer .footM li:not(:last-child)::after{content:'\00b7';margin-inline:8px}
+            
+            /* content */ .blogT{align-items:baseline;justify-content:flex-start; margin-bottom:12px} .blogT >*{align-items:baseline;overflow:hidden} .blogT >*:not(:first-child)::before{content:'\002F'; flex-shrink:0;margin-inline:8px} .blogT .a{color:var(--contentC-alt)} .blogT .tab >*::before{content:attr(aria-label)} .blogP .pT .name{margin:0; font:600 3.2rem/1.2 var(--fontHead)} .blogP :is(.pD, .pL){margin-block:15px 25px; font:400 1.15rem/1.4 var(--fontBody)} .blogP .pL{font-size:.94rem} .blogP .pL .reading, .blogP .pD{color:var(--contentC-alt)} .blogP .pL .reading::after{content:' min read'} .blogP .pL .transl label{color:var(--themeLink)} .blogP .pL .transl:not(:first-child)::before{content:'\00b7'; margin-inline:10px} .blogP .pE{position:relative;margin-top:40px; font:1.143rem/1.7 var(--fontBody); transition:font var(--tDuration)}
+            
+            /* content styling */ .pE :is(h2, h3, h4, h5, h6){margin-top:1em;line-height:1.3} .pE :is(h2, h3, h4, h5, h6):target{margin-top:0;padding-top:1em} .pE :is(h2, h3, h4, h5, h6).h::before{content:attr(data-text)} .pE p{margin-block:var(--lineSpacing)} .pE hr{margin-block:var(--postBreak); border:0; font:24px var(--fontCode)} .pE hr::before{content:'\007E'; display:block; letter-spacing:.6em;text-indent:.6em;text-align:center; opacity:.8;clear:both} /* list */ .step{counter-reset:num; line-height:1.6} .step >li{position:relative;counter-increment:num; padding-inline-start:45px} .step >li:not(:last-child){padding-bottom:15px} .step >li::before{content:counter(num) '.'; display:flex;align-items:center;justify-content:center; position:absolute;inset-block-start:0;inset-inline-start:0;width:30px;height:30px;border:1px solid var(--stepC);border-radius:50%; color:currentColor;font:small var(--fontHead); transition:background var(--tDuration), color var(--tDuration)} .step >li:hover::before{background-color:var(--stepC);color:var(--stepHover)} .step >li::after{content:''; position:absolute;inset-block:calc(30px + 8px) 8px;inset-inline-start:calc(30px / 2); border-inline-start:1px solid var(--stepC)} .step img{max-width:90%;margin-top:1.2em} /* accordion */ .showH{margin-block:1.7em; font:.98em/1.6 var(--fontBody)} details.ac{padding:1.5em 1.25em; border-bottom:var(--contentBd-line) solid var(--contentBd-color)} details.ac:first-child{border-top:var(--contentBd-line) solid var(--contentBd-color)} details.ac summary{display:flex;align-items:baseline;justify-content:space-between; transition:color var(--tDuration)} details.ac summary::after{content:'\276F'; flex-shrink:0;display:inline; font-size:small; transform:rotate(90deg);cursor:pointer} details.ac[open] summary{color:var(--themeLink)} details.ac:not(.alt)[open] summary::after{transform:rotate(-90deg)} details.ac.alt summary::after{content:'\002B'; font-size:1.25em;line-height:20px;transform:none} details.ac.alt[open] summary::after{content:'\2212'} details.ac .aC{margin-block:1em} details.ac .aC p:first-child{margin-block-start:0} /* Note */ .note{position:relative; padding:18px 20px;padding-inline-start:40px;border-radius:var(--contentBd-radius); color:var(--noteC);background-color:var(--noteBg); font:14px/1.4 var(--fontHead); overflow:hidden} .note::after{content:var(--noteAfter); position:absolute;inset-block-start:12px;inset-inline-start:14px; min-width:15px;text-align:center; font-size:1.5rem} .note.wr{color:var(--warnC);background-color:var(--warnBg)} .note.wr::after{content:var(--warnAfter)} /* code */ code, kbd{display:inline; padding:5px;border-radius:2px; font:14px var(--fontCode); background-color:#ebeced;color:#2f3337}
+            
+            /* Dual lang */ .lang:not(:checked) ~ .wp .textTranslate, .lang:checked ~ .wp .textOri{display:none}
+            
+            /* aside */ .to{font:500 1.05em var(--fontHead)} .to, .to ul{counter-reset:toc} .to li{position:relative;padding-inline-start:25px;line-height:20px} .to li:not(:last-child){padding-block-end:8px} .to li::before{content:counters(toc,'.')'. '; counter-increment:toc; position:absolute;inset-block-start:2px;inset-inline-start:0; font:400 small var(--fontHead)} .to li li::before{content:counters(toc,'.')} .to ul{padding-block:8px} .mo{margin-top:3rem} .mo a:hover{text-decoration: underline}
+            
+            /* Responsive */
+            @media screen and (min-width:897px){
+                /* main and aside */ aside{width:var(--aside)} main{width:calc(100% - var(--aside));max-width:var(--contentPage-maxWidth); position:relative;padding-inline-start:calc(var(--contentPadding) *2)} /*main::before{content: ''; position:absolute;inset-block:0;inset-inline-start:0; border-inline-start:1px solid var(--contentBd-color)}*/
+            }
+            @media screen and (min-width:768px){/* Scrollbar custom */ ::-webkit-scrollbar{-webkit-appearance:none; width:4px;height:5px}::-webkit-scrollbar-track{background-color:transparent}::-webkit-scrollbar-thumb{background-color:rgb(0 0 0 / 15%); border-radius:10px}::-webkit-scrollbar-thumb:hover{background-color:rgb(0 0 0 / 35%)}::-webkit-scrollbar-thumb:active{background-color:rgb(0 0 0 / 35%)} }
+            @media screen and (max-width:896px){
+                .mi{overflow: hidden} main{flex-shrink:0;width:100%; position:relative;transition:width var(--tDuration)} aside{width:0;visibility:hidden;opacity:0; transition: width var(--tDuration), padding var(--tDuration), var(--tShowHide)} .max.s{display:block; padding-block-start:10px} .max.s span{gap:6px;justify-content:flex-start; position:relative;margin-inline-start:-6px} .max.s span::after{content:attr(data-text)} .side:not(:checked) ~ .wp .max.s svg{transform:rotate(180deg)} .side:checked ~ .wp aside{width:var(--asideM); padding-inline-end:var(--contentPadding); visibility:visible;opacity:1}
+}
+        </style>
+    </head>
+    <body class='nB nJs'>
+
+        <input class='side hidden' id='forSide' type='checkbox'/>
+        <input class='lang hidden' id='forLang' type='checkbox'/>
+        <div class='wp flex column bgInherit'>
+            <header class='noPrint'>
+                <div class='max flex'>
+                    <!--[ Header title ]-->
+                    <div class='headT cInherit'>
+                        <a class='headTitle' href='https://www.jagodesain.com'>Jago Desain </a>
+                    </div>
+                </div>
+            </header>
+        
+            <div class='mi'>
+                <div class='max s fontM hidden'>
+                    <label aria-label='Toggle menu' class='ic fc i18' for='forSide'>
+                        <span class='flexIn center' data-text='Toggle sidebar'>
+                            <svg class='line r' viewBox='0 0 24 24'><path d='M15 19.9201L8.47997 13.4001C7.70997 12.6301 7.70997 11.3701 8.47997 10.6001L15 4.08008'></path></svg>
+                        </span>
+                    </label>
+                </div>
+                <div class='max flex'>
+                    <aside class='shrink'>
+                        <section class='co' data-text='Contents:'>
+
+                            <ul class='to noList cInherit u textOri'>
+                                <li>
+                                    <a href='#preparation'>Preparation</a>
+                                    <ul>
+                                        <li><a href='#bloggerCustomize'>Blogger Theme Editor</a></li>
+                                        <li><a href='#editHTML'>Edit HTML</a></li>
+                                        <li><a href='#mobileSetting'>Mobile settings</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href='#installation'>Installation guide</a></li>
+                                <li>
+                                    <a href='#instalManual'>manual installation (alternative)</a>
+                                    <ul>
+                                        <li><a href='#copyXML'>Copying the .XML code</a></li>
+                                        <li><a href='#pasteXML'>Overriding the previous theme code</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            
+                            <ul class='to noList cInherit u textTranslate'>
+                                <li>
+                                    <a href='#persiapan'>Persiapan</a>
+                                    <ul>
+                                        <li><a href='#bloggerSesuaikan'>Editor Tema Blogger</a></li>
+                                        <li><a href='#HTMLeditor'>Edit HTML</a></li>
+                                        <li><a href='#seluler'>Setelan seluler</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href='#instalasi'>Panduan instalasi</a></li>
+                                <li>
+                                    <a href='#instalasiManual'>Instal manual (alternatif)</a>
+                                    <ul>
+                                        <li><a href='#salinXML'>Salin kode .XML</a></li>
+                                        <li><a href='#tempelXML'>Mengganti/menimpa kode tema sebelumnya</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <div class='mo'>
+                                <a class='extL' href='https://docs.jagodesain.com'>
+                                    <span class='textOri'>View complete documentation</span>
+                                    <span class='textTranslate'>Lihat dokumentasi lengkap</span>
+                                </a>
+                            </div>
+                        </section>
+                    </aside>
+            
+                    <main class='grow'>
+                        <section class='blogT flex cInherit'>
+                            <div class='tab flexIn shrink noWrap'>
+                                <a aria-label='Docs' class='a flexIn shrink fontM' href='https://docs.jagodesain.com'></a>
+                            </div>
+                            <div class='tab flexIn shrink noWrap'>
+                                <a aria-label='Basic' class='flexIn fontM' href='https://docs.jagodesain.com/search/label/Basic'></a>
+                            </div>
+                        </section>
+
+                        <article class='blogP'>
+                            <section class='pT'>
+                                <h1 class='name'>
+                                    <span class='textOri'>Getting Started</span>
+                                    <span class='textTranslate'>Permulaan</span>
+                                </h1>
+                            </section>
+                            <section class='pD'>
+                                <span class='textOri'>Preparation and guide to install the theme easily.</span>
+                                <span class='textTranslate'>Persiapan dan panduan untuk menginstal tema dengan mudah.</span>
+                            </section>
+                            
+                            <section class='pL flex baseline'>
+                                <bdi class='reading ellips nojava' id='timeRead'></bdi>
+                                <div class='transl flex shrink'>
+                                    <label for='forLang'>
+                                        <span class='textOri'>Terjemahkan</span>
+                                        <span class='textTranslate'>Translate</span>
+                                    </label>
+                                </div>
+                            </section>
+                            
+                            <section class='pE'>
+                                <div class='textOri' id='postRead'>
+                                  <h2 class='h' data-text='1. ' id='preparation'>Preparation</h2>
+  
+                                  <p>For the initial stage we want you to know some basic settings for Blogger such as how to customize or edit HTML, this will be needed when you use Blogger custom themes.</p>
+  
+                                  <h3 class='h' data-text='1.1. ' id='bloggerCustomize'>Blogger Theme Editor</h3>
+  
+                                  <p>Is a page where you can customize themes without editing the HTML, what you can edit includes the color/background, length and adding new CSS code, in built-in Blogger themes you can also change the font types. It's should be noted that AMP doesn't support this feature but some themes use CSS variables that put the color/background, length in one place which makes it easier for you to customize.</p>
+  
+                                  <ol class='step noList' style='margin-bottom:4em'>
+                                    <li>First, on Blogger dashboard, go to <b>Theme</b> › <b>Customize</b>.</li>
+                                    <li>You will be redirected to a new page with 3 menus on the left.</li>
+                                    <li>Ylick on <b>Advanced</b> tab, in the dropdown menu select which component you want to customize.
+      
+                                      <div class='separator' style='text-align:center'>
+                                        <img alt='Blogger customize' src='file/img/docs-customize.png'>
+                                      </div>
+                                    </li>
+                                  </ol>
+  
+                                  <h3 class='h' data-text='1.2. ' id='editHTML'>Edit HTML</h3>
+  
+                                  <p>This feature is intended for advanced modification, which means you should at least have some understanding of HTML, CSS or javascript. This may be a bit difficult for those of you who are not familiar with coding, but as there are many tutorials and guides on the internet, everything can be learned gradually.</p>
+  
+                                  <p>You can also install the theme through this feature by overwriting all HTML code of the previous theme, this method will reset all default settings of the previous theme including existing widgets, follow the steps below access the Blogger HTML Editor:</p>
+  
+                                  <ol class='step noList'>
+                                    <li>In Blogger dashboard, click on <b>Theme</b>.</li>
+                                    <li>Click <span class='op i18' style='vertical-align:top'><svg viewBox='0 0 512 512'><path d='M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z'></path></svg></span> icon next to the <b>Customize</b> button.</li>
+                                    <li>Click <b>Edit HTML</b>, you will be redirected to the editing page.
+      
+                                      <div class='separator' style='text-align:center'>
+                                        <img alt='Edit HTML' src='file/img/docs-edit-html.png'>
+                                      </div>
+                                    </li>
+                                  </ol>
+  
+                                  <!--[ Accordion start ]-->
+                                  <div class='showH' id='jumpWidget' style='margin-bottom:4em'>
+                                    <details class='ac alt'>
+                                      <summary>How to jump directly to a specific widget</summary>
+                                      <div class='aC'>
+                                        <p>To improve the editing process, Blogger provides a feature to jump directly to a specific widget, you can press <span class='op i18' style='vertical-align:middle'><svg viewBox='0 0 18 18'><path d='M10 10v6h6v-6h-6zM2 8h6V2H2v6zm0 8h6v-6H2v6zm8 0h6v-6h-6v6zm7.25-11L13 .75 8.75 5 13 9.25 17.25 5z'></path></svg></span> icon then the widget ID will be displayed, select the widget you want to edit.</p>
+      
+                                        <div class='separator' style='text-align:center'>
+                                          <img alt='Jump to widget Blogger' src='file/img/docs-jump-widget.png'>
+                                        </div>
+                                      </div>
+                                    </details>
+                                  </div>
+  
+                                  <h3 class='h' data-text='1.3. ' id='mobileSetting'>Mobile settings</h3>
+
+                                  <p>Basically this feature is used to determine the appearance of the blog when accessed via mobile, the mobile version is marked with <code>?m=1</code> at the end of the url and cannot be removed. Most custom themes already support responsive even some premium themes already support Adaptive Layout, therefore mobile settings are no longer needed, we recommend choosing a desktop theme on mobile display.</p>
+  
+                                  <ol class='step noList'>
+                                    <li>In Blogger dashboard, click on <b>Theme</b>.</li>
+                                    <li>Click <span class='op i18' style='vertical-align:top'><svg viewBox='0 0 512 512'><path d='M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z'></path></svg></span> icon next to the <b>Customize</b> button.</li>
+                                    <li>Click <b>Mobile Settings</b>, in the option '<u>Want to display Desktop or Mobile theme on mobile devices?</u>' select <b>Desktop</b>,
+      
+                                      <div class='separator' style='text-align:center'>
+                                        <img alt='Mobile settings' src='file/img/docs-seluler.png'>
+                                      </div>
+                                    </li>
+                                    <li>Click <b>Save</b>.</li>
+                                  </ol>
+  
+                                  <hr>
+  
+                                  <h2 class='h' data-text='2. ' id='installation'>Installation guide</h2>
+  
+                                  <p>The easiest way to install a Blogger theme is by uploading the .XML file directly:</p>
+  
+                                  <ol class='step noList'>
+                                    <li>In <b>Theme</b> menu, click the <span class='op i18' style='vertical-align:top'><svg viewBox='0 0 512 512'><path d='M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z'></path></svg></span> icon next to the <b>Customize</b> button.</li>
+                                    <li>Click <b>Restore</b>.</li>
+                                    <li>Select the .XML file that you want to upload, click <b>Upload</b> then check for changes to your blog by clicking <b>View Blog</b> or refreshing your blog page directly.</li>
+                                  </ol>
+  
+                                  <p>This method will retain the widgets in the previous theme, the final appearance may be different from the theme demo, use the manual method to install the theme cleanly.</p>
+  
+                                  <h2 class='h' data-text='3. ' id='instalManual'>Manual installation (alternative)</h2>
+  
+                                  <p>The most recommended way to install a custom theme is to directly overwrite the HTML code of the previous theme, but as mentioned earlier, this method will reset all the widgets in the previous theme and replace them with built-in widgets from the new theme.</p>
+  
+                                  <p class='note wr'>It is highly recommended to back up the previous theme first before using this method.</p>
+  
+                                  <h3 class='h' data-text='3.1. ' id='copyXML'>Copying the .XML code</h3>
+                                  <p>Via Google Drive:</p>
+  
+                                  <ol class='step noList' style='margin-bottom:4em'>
+                                    <li>In Google Drive, open the folder of the theme you purchased.</li>
+                                    <li><b>Right-click</b> on the theme you want to install.</li>
+                                    <li>Select <b>Open with</b> › <b>Text Editor</b>.</li>
+                                    <li>Wait until a new tab opens and loads perfectly, copy all the theme code that appears, press <kbd>Ctrl</kbd>+<kbd>A</kbd> › <kbd>Ctrl</kbd>+<kbd>C</kbd> for quick commands.</li>
+                                  </ol>
+  
+                                  <p>Via Notepad:</p>
+  
+                                  <ol class='step noList' style='margin-bottom:4em'>
+                                    <li>Download the theme file you purchased through the provided Google Drive folder.</li>
+                                    <li><b>Right-click</b> › <b>Open with</b>, select <b>Notepad</b></li>
+                                    <li>Copy all the theme codes by pressing <kbd>Ctrl</kbd>+<kbd>A</kbd> › <kbd>Ctrl</kbd>+<kbd>C</kbd></li>
+                                  </ol>
+  
+                                  <h3 class='h' data-text='3.2. ' id='pasteXML'>Overriding the previous theme code</h3>
+  
+                                  <ol class='step noList'>
+                                    <li>Go to <a class='extL' href='#editHTML'>Blogger HTML Editor</a></li>
+                                    <li>Replace all code in the previous theme, <b>right click</b> › <b>Select All</b> (<kbd>Ctrl</kbd>+<kbd>A</kbd>).</li>
+                                    <li>Press <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste all the .XML code that was copied before.</li>
+                                    <li>Save the theme by clicking <span class='op i18' style='vertical-align:top'><svg viewBox='0 0 48 48'><path d='M34 6H10c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4V14l-8-8zM24 38c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm6-20H10v-8h20v8z'></path></svg></span> icon on the top right of the HTML Editor.</li>
+                                  </ol>
+                                </div>
+
+                                <!-- Terjemahan  -->
+                                <div class='textTranslate'>
+                                  <h2 class='h' data-text='1. ' id='persiapan'>Persiapan</h2>
+  
+                                  <p>Untuk tahap awal, kami ingin Anda mengetahui beberapa pengaturan dasar untuk Blogger seperti cara menyesuaikan atau mengedit HTML, hal ini akan dibutuhkan ketika Anda menggunakan tema khusus Blogger.</p>
+  
+                                  <h3 class='h' data-text='1.1. ' id='bloggerSesuaikan'>Editor Tema Blogger</h3>
+  
+                                  <p>Merupakan halaman dimana Anda dapat melakukan kustomisasi tema tanpa mengedit HTML, yang dapat Anda edit antara lain warna/latar belakang, panjang dan menambahkan kode CSS baru, pada tema bawaan Blogger Anda juga dapat mengubah jenis font. Perlu dicatat bahwa AMP tidak mendukung fitur ini, namun beberapa tema menggunakan variabel CSS yang menempatkan warna/latar belakang, panjang di satu tempat sehingga memudahkan Anda untuk melakukan kustomisasi.</p>
+  
+                                  <ol class='step noList' style='margin-bottom:4em'>
+                                    <li>Pertama, pada dashboard Blogger, pergi menuju <b>Tema</b> › <b>Sesuaikan</b>.</li>
+                                    <li>Anda akan diarahkan ke halaman baru dengan 3 menu di sebelah kiri.</li>
+                                    <li>Klik tab <b>Lanjutan</b>, pada menu dropdown pilih komponen mana yang ingin Anda sesuaikan.
+      
+                                      <div class='separator' style='text-align:center'>
+                                        <img alt='Blogger sesuaikan' src='file/img/docs-customize.png'>
+                                      </div>
+                                    </li>
+                                  </ol>
+  
+                                  <h3 class='h' data-text='1.2. ' id='HTMLeditor'>Edit HTML</h3>
+  
+                                  <p>Fitur ini ditujukan untuk modifikasi tingkat lanjut, yang berarti Anda setidaknya harus memiliki pemahaman tentang HTML, CSS atau javascript. Hal ini mungkin agak sulit bagi Anda yang tidak terbiasa dengan coding, tetapi karena ada banyak tutorial dan panduan di internet, semuanya dapat dipelajari secara bertahap.</p>
+  
+                                  <p>Anda juga bisa memasang tema melalui fitur ini dengan menimpa semua kode HTML dari tema sebelumnya, cara ini akan mereset semua pengaturan default dari tema sebelumnya termasuk widget yang ada, ikuti langkah-langkah di bawah ini akses Blogger HTML Editor:</p>
+  
+                                  <ol class='step noList'>
+                                    <li>Di dasbor Blogger, klik <b>Tema</b>.</li>
+                                    <li>Klik ikon <span class='op i18' style='vertical-align:top'><svg viewBox='0 0 512 512'><path d='M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z'></path></svg></span> di sebelah tombol <b>Sesuaikan</b>.</li>
+                                    <li>Klik <b>Edit HTML</b>, Anda akan diarahkan ke halaman pengeditan.
+      
+                                      <div class='separator' style='text-align:center'>
+                                        <img alt='Edit HTML' src='file/img/docs-edit-html.png'>
+                                      </div>
+                                    </li>
+                                  </ol>
+  
+                                  <!--[ Accordion start ]-->
+                                  <div class='showH' id='lompatWidget' style='margin-bottom:4em'>
+                                    <details class='ac alt'>
+                                      <summary>Bagaimana cara langsung lompat ke widget tertentu</summary>
+                                      <div class='aC'>
+                                        <p>Untuk mempermudah proses pengeditan, Blogger menyediakan fitur untuk melompat langsung ke widget tertentu, Anda dapat menekan ikon <span class='op i18' style='vertical-align:middle'><svg viewBox='0 0 18 18'><path d='M10 10v6h6v-6h-6zM2 8h6V2H2v6zm0 8h6v-6H2v6zm8 0h6v-6h-6v6zm7.25-11L13 .75 8.75 5 13 9.25 17.25 5z'></path></svg></span> kemudian ID widget akan ditampilkan, pilih widget yang ingin Anda edit.</p>
+      
+                                        <div class='separator' style='text-align:center'>
+                                          <img alt='Lompat ke widget - Blogger' src='file/img/docs-jump-widget.png'>
+                                        </div>
+                                      </div>
+                                    </details>
+                                  </div>
+  
+                                  <h3 class='h' data-text='1.3. ' id='seluler'>Setelan seluler</h3>
+  
+                                  <p>Pada dasarnya fitur ini digunakan untuk menentukan tampilan blog ketika diakses melalui seluler, versi seluler ditandai dengan <code>?m=1</code> di akhir url dan tidak dapat dihilangkan. Sebagian besar tema custom sudah mendukung responsive bahkan beberapa tema premium sudah mendukung Adaptive Layout, oleh karena itu setelan seluler tidak diperlukan lagi, kami sarankan untuk memilih tema desktop pada tampilan mobile.</p>
+  
+                                  <ol class='step noList'>
+                                    <li>Di dasbor Blogger, klik <b>Tema</b>.</li>
+                                    <li>Klik ikon <span class='op i18' style='vertical-align:top'><svg viewBox='0 0 512 512'><path d='M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z'></path></svg></span> di sebelah tombol <b>Sesuaikan</b>.</li>
+                                    <li>Klik <b>Setelan Seluler</b>, pada opsi '<u>Ingin menampilkan tema Desktop atau Seluler di perangkat seluler?</u>' pilih <b>Desktop</b>,
+      
+                                      <div class='separator' style='text-align:center'>
+                                        <img alt='Setelan seluler' src='file/img/docs-seluler.png'>
+                                      </div>
+                                    </li>
+                                    <li>Klik <b>Simpan</b>.</li>
+                                  </ol>
+
+                                  <hr>
+  
+                                  <h2 class='h' data-text='2. ' id='instalasi'>Panduan instalasi</h2>
+  
+                                  <p>Cara termudah untuk menginstal tema Blogger adalah dengan mengunggah file .XML secara langsung:</p>
+  
+                                  <ol class='step noList'>
+                                    <li>Di menu <b>Tema</b>, klik ikon <span class='op i18' style='vertical-align:top'><svg viewBox='0 0 512 512'><path d='M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z'></path></svg></span> di sebelah tombol <b>Sesuaikan</b>.</li>
+                                    <li>Klik Pulihkan.</li>
+                                    <li>Pilih file .XML yang ingin Anda unggah, klik <b>Unggah</b>, lalu periksa perubahan pada blog Anda dengan mengeklik <b>Lihat Blog</b> atau menyegarkan halaman blog Anda secara langsung.</li>
+                                  </ol>
+  
+                                  <p>Cara ini akan mempertahankan widget pada tema sebelumnya, tampilan akhir mungkin akan berbeda dengan demo tema, gunakan cara manual untuk memasang tema dengan bersih.</p>
+  
+                                  <h2 class='h' data-text='3. ' id='instalasiManual'>Instal manual (alternatif)</h2>
+  
+                                  <p>Cara yang paling disarankan untuk menginstal tema khusus adalah dengan langsung menimpa kode HTML dari tema sebelumnya, tetapi seperti yang disinggung sebelumnya, metode ini akan mengatur ulang semua widget di tema sebelumnya dan menggantinya dengan widget bawaan dari tema baru.</p>
+  
+                                  <p class='note wr'>Sangat disarankan untuk mencadangkan tema sebelumnya terlebih dahulu sebelum menggunakan metode ini.</p>
+
+                                  <h3 class='h' data-text='3.1. ' id='salinXML'>Salin kode .XML</h3>
+                                  <p>Melalui Google Drive:</p>
+  
+                                  <ol class='step noList' style='margin-bottom:4em'>
+                                    <li>Di Google Drive, buka folder tema yang Anda beli.</li>
+                                    <li><b>Klik kanan</b> pada tema yang ingin Anda instal.</li>
+                                    <li>Pilih <b>Buka dengan</b> › <b>Text Editor</b>.</li>
+                                    <li>Tunggu hingga tab baru terbuka dan dimuat dengan sempurna, salin semua kode tema yang muncul, tekan <kbd>Ctrl</kbd>+<kbd>A</kbd> › <kbd>Ctrl</kbd>+<kbd>C</kbd> untuk perintah cepat.</li>
+                                  </ol>
+  
+                                  <p>Melalui Notepad:</p>
+  
+                                  <ol class='step noList' style='margin-bottom:4em'>
+                                    <li>Unduh file tema yang Anda beli melalui folder Google Drive yang disediakan.</li>
+                                    <li><b>klik kanan</b> › <b>Open with</b>, pilih <b>Notepad</b></li>
+                                    <li>Salin semua kode tema dengan menekan <kbd>Ctrl</kbd>+<kbd>A</kbd> › <kbd>Ctrl</kbd>+<kbd>C</kbd></li>
+                                  </ol>
+  
+                                  <h3 class='h' data-text='3.2. ' id='tempelXML'>Mengganti/menimpa kode tema sebelumnya</h3>
+  
+                                  <ol class='step noList'>
+                                    <li>Pergi ke <a class='extL' href='#HTMLeditor'>Editor HTML Blogger</a></li>
+                                    <li>Ganti semua kode pada tema sebelumnya, <b>klik kanan</b> › <b>Select All</b> (<kbd>Ctrl</kbd>+<kbd>A</kbd>).</li>
+                                    <li>Tekan <kbd>Ctrl</kbd>+<kbd>V</kbd> untuk menempelkan semua kode .XML yang sudah disalin sebelumnya.</li>
+                                    <li>Simpan tema dengan cara klik ikon <span class='op i18' style='vertical-align:top'><svg viewBox='0 0 48 48'><path d='M34 6H10c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4V14l-8-8zM24 38c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm6-20H10v-8h20v8z'></path></svg></span> yang ada pada kanan atas Editor HTML.</li>
+                                  </ol>
+                                </div>
+
+                            </section>
+                        </article>
+                    </main>
+                </div>
+            </div>
+            
+            <footer class='cInherit u noPrint'>
+                <div class='max'>
+                    <section class='credits flex'>
+                        <div class='credit ellips'>
+                            <span class='cd'>
+                                <bdi><a href='https://www.jagodesain.com'>Jago Desain</a>.</bdi>
+                            </span>
+                        </div>
+                        <ul class='footM flex baseline noList fontM'>
+                            <li class='flexIn'><a href='https://theme.jagodesain.com/p/terms.html'>Terms</a></li>
+                            <li class='flexIn'><a href='https://theme.jagodesain.com/p/disclaimer.html'>Disclaimers</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </footer>
+        </div>
+
+        <script>/*<![CDATA[*/ var d = document; d.querySelector('.nB').classList.remove('nJs'); function readTime(el) {ret = ''; var length = el.childNodes.length; for(var i = 0; i < length; i++) {var node = el.childNodes[i]; if(node.nodeType != 8) {ret += node.nodeType != 1 ? node.nodeValue : readTime(node);} } return ret;} var words = readTime(d.getElementById('postRead')); var count = words.split(' ').length; var avg = 200; var counted = count / avg; var maincount = Math.round(counted); d.getElementById('timeRead').innerHTML = maincount; /*]]>*/</script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!--[ Active function ]-->
+<input class='tbIn hidden' id='fTabs-1' type='radio' name='postTabs' checked>
+<input class='tbIn hidden' id='fTabs-2' type='radio' name='postTabs'>
+<input class='tbIn hidden' id='fTabs-3' type='radio' name='postTabs'>
+
+<!--[ Tabs header/title ]-->
+<div class='tbHd scrlH'>
+  <!--[ Change atribute data-text='...' to replace tabs title ]-->
+  <label for='fTabs-1' data-text='Tabs_1'></label>
+  <label for='fTabs-2' data-text='Tabs_2'></label>
+  <label for='fTabs-3' data-text='Tabs_3'></label>
+</div>
+
+<div class='tbCn'>
+  <!--[ Tabs content ]-->
+  <div class='tbText-1'>
+    First tab here... 
+
+  </div>
+  
+  <!--[ Tabs content ]-->
+  <div class='tbText-2'>
+    Second tab here...
+  
+  </div>
+  
+  <!--[ Tabs content ]-->
+  <div class='tbText-3'>
+    Third tab here...
+
+  </div>
+</div>

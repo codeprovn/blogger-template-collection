@@ -1,0 +1,29 @@
+<!--[ Active function ]-->
+<input class='allTabs hidden' id='forall-tabs1' type='radio' name='postTabs' checked>
+<input class='allTabs hidden' id='forall-tabs2' type='radio' name='postTabs'>
+<input class='allTabs hidden' id='forall-tabs3' type='radio' name='postTabs'>
+<div class='postTabs'>
+  <div class='tabsHead'>
+    <!--[ Change atribute data-text='...' to replace tabs title ]-->
+    <label for='forall-tabs1' data-text='Tabs_1'></label>
+    <label for='forall-tabs2' data-text='Tabs_2'></label>
+    <label for='forall-tabs3' data-text='Tabs_3'></label>
+  </div>
+
+  <div class='tabsContent'>
+    <!--[ Tabs content ]-->
+    <div class='tabsContent-1'>
+      <p>Tabs_1_here</p>
+    </div>
+
+    <!--[ Tabs content ]-->
+    <div class='tabsContent-2'>
+      <p>Tabs_2_here</p>
+    </div>
+
+    <!--[ Tabs content ]-->
+    <div class='tabsContent-3'>
+      <p>Tabs_3_here</p>
+    </div>
+  </div>
+</div>

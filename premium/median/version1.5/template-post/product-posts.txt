@@ -1,0 +1,67 @@
+<div class='separator'>
+  <img alt='Image_title' src='Image_src' />
+</div>
+
+<!--[ Price to show in homepage ]-->
+<div class='proPrice' data-text='Price'>Rp. 200.000</div>
+<!--more-->
+
+<div class='proInfo'>
+  <div class='proInfoL'><small>Size</small><span>Small, Medium, Large, X Large</span></div>
+  <div class='proInfoR'><small>Color</small><span>Merah, Kuning, HIjau, Biru</span></div>
+</div>
+<div class='proInfo one'><small>Sample</small><span>Nullam congue euismod euismod, mauris lacinia pellentesque vehicula</span></div>
+
+<div class='proMarket'>
+  <small>atau Belanja melalui "<b>Market Place</b>" favorit anda :</small>
+  
+  <!--[ Change attribute href='#' to add url ]-->
+  <a title='Tokopedia' href='#' target='_blank' rel='noopener'>
+    <img class='lazy' data-src='https://cdn.statically.io/favicons/tokopedia.com' src='data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs='>
+  </a>
+  <a title='Bukalapak' href='#' target='_blank' rel='noopener'>
+    <img class='lazy' data-src='https://cdn.statically.io/favicons/bukalapak.com' src='data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs='>
+  </a>
+  <a title='Shopee' href='#' target='_blank' rel='noopener'>
+    <img class='lazy' data-src='https://cdn.statically.io/favicons/shopee.co.id' src='data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs='>
+  </a>
+  <a title='Lazada' href='#' target='_blank' rel='noopener'>
+    <img class='lazy' data-src='https://cdn.statically.io/favicons/lazada.co.id' src='data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs='>
+  </a>
+</div>
+
+<!--[ Active function ]-->
+<input class='allTabs hidden' id='forall-tabs1' type='radio' name='postTabs' checked>
+<input class='allTabs hidden' id='forall-tabs2' type='radio' name='postTabs'>
+<input class='allTabs hidden' id='forall-tabs3' type='radio' name='postTabs'>
+<div class='postTabs'>
+  <div class='tabsHead'>
+    <!--[ Change atribute data-text='...' to replace tabs title ]-->
+    <label for='forall-tabs1' data-text='Deskripsi'></label>
+    <label for='forall-tabs2' data-text='Tabs_2'></label>
+    <label for='forall-tabs3' data-text='Tabs_3'></label>
+  </div>
+
+  <div class='tabsContent'>
+    <!--[ Tabs content ]-->
+    <div class='tabsContent-1'>
+
+      <!--[ Your content goes here ]-->
+
+    </div>
+
+    <!--[ Tabs content ]-->
+    <div class='tabsContent-2'>
+
+      <!--[ Your content goes here ]-->
+
+    </div>
+
+    <!--[ Tabs content ]-->
+    <div class='tabsContent-3'>
+
+      <!--[ Your content goes here ]-->
+
+    </div>
+  </div>
+</div>
