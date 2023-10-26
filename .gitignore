@@ -1,0 +1,50 @@
+# Tệp và thư mục tạm thời
+*.log
+*.swp
+*.tmp
+
+# Thư mục hệ thống
+.DS_Store
+Thumbs.db
+
+# Môi trường ảo và gói dependency (Python)
+__pycache__/
+venv/
+env/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+.build/
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Các tệp cài đặt của Visual Studio Code
+.vscode/
+
+# Các tệp tự sinh bởi IDE và trình biên dịch
+.idea/
+*.iml
+out/
+
+# Các thư mục và tệp tạo ra bởi công cụ build và biên dịch
+build/
+dist/
+*.class
+
+# Thư mục cấu hình, secret keys và thông tin mật
+config.js
+config.json
+*.secret
+
+# Các tệp tạo ra bởi các công cụ gỡ lỗi và phát triển
+*.log
+*.log.*
+*.stackdump
+
+# Thư mục sự phụ thuộc
+bin/
+lib/
