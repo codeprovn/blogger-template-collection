@@ -25,7 +25,7 @@ Mỗi mẫu được tổ chức trong một thư mục con riêng biệt trong 
 
 ### Chi tiết về cấu trúc thư mục
 
-```js
+```
 blogger-template-collection/
 │
 ├── premium/
