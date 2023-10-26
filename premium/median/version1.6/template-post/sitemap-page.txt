@@ -1,0 +1,36 @@
+<!--[ Sitemap script DTE, source: dte.web.id/teknis/widget-daftar-isi-tabulasi-blogger ]-->
+<script src='//dte-project.github.io/blogger/tabbed-toc.min.js?active=0&amp;load=true&amp;ad=false&amp;date=%25M~%25%20%25D%25%2C%20%25Y%25' defer='defer'></script>
+
+<style>
+  .tabbed-toc{border:0;font-size:15px}
+  .tabbed-toc-tabs{width:10em;font-size:14px}
+  .tabbed-toc-tab{padding:0 15px;border-radius:3px 0 0 3px;position:relative;transition:var(--trans-1);color:inherit}
+  .tabbed-toc-tab::after{content:'';position:absolute;top:0;bottom:0;right:0;border-right:1px solid var(--linkC);opacity:0}
+  .tabbed-toc-tab:hover, .tabbed-toc-tab.active{background:var(--transB)}
+  .tabbed-toc-tab:hover::after, .tabbed-toc-tab.active::after{opacity:1}
+  .tabbed-toc-tab.active{color:var(--linkC);opacity:.7}
+  .ltr .tabbed-toc-panels{border-color:var(--contentL)}
+  .ltr .tabbed-toc-time{position:relative;font-size:12px;opacity:.7}
+  .tabbed-toc li{padding:5px 7.5px;line-height:1.6em;min-height:40px;display:flex;align-items:center;justify-content:space-between}
+  .tabbed-toc li >*{padding:0 7.5px; margin:0}
+  .tabbed-toc a{color:inherit}
+  .tabbed-toc-title{font-size:16px}
+  .tabbed-toc-title sup{font-weight:400;font-size:12px;color:var(--linkC)}
+  .drkM .ltr .tabbed-toc-panels{border-color:rgba(255,255,255,.1)}
+  .drkM .tabbed-toc-tab.active, .drkM .tabbed-toc-title sup{color:var(--darkL)}
+  .drkM .tabbed-toc-tab::after{border-color:var(--darkL)}
+  @media screen and (max-width:750px){
+    .tabbed-toc nav{display:flex;overflow-x:scroll;overflow-y:hidden;scroll-behavior:smooth;scroll-snap-type:x mandatory; -ms-overflow-style:none;-webkit-overflow-scrolling:touch; /*position:relative;width:calc(100% + 40px);left:-20px;right:-20px;padding:0 20px*/}
+    .tabbed-toc nav::-webkit-scrollbar{width:0;height:0}
+    .tabbed-toc nav::-webkit-scrollbar-track{background:transparent}
+    .tabbed-toc nav::-webkit-scrollbar-thumb{background:transparent;border:none}
+    .tabbed-toc-tab{border-radius:3px 3px 0 0;white-space:nowrap;flex-shrink:0;scroll-snap-align:start}
+    .tabbed-toc-tab::after{top:auto;left:0;border-right:0;border-bottom:1px solid var(--linkC)}
+    .tabbed-toc ol{margin-top:15px;padding:0 15px;list-style:decimal}
+    .tabbed-toc li{display:list-item;padding:5px 0;overflow:visible;list-style:inherit}
+    .drkM .tabbed-toc-tab::after{border-color:var(--darkL)}
+  }
+  @media screen and (max-width:500px){
+    .tabbed-toc-title{font-size:15px}
+  }
+</style>

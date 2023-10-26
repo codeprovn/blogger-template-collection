@@ -1,0 +1,36 @@
+<!--[ Active function ]-->
+<input class='tbIn hidden' id='fTabs-1' type='radio' name='postTabs' checked>
+<input class='tbIn hidden' id='fTabs-2' type='radio' name='postTabs'>
+<input class='tbIn hidden' id='fTabs-3' type='radio' name='postTabs'>
+<input class='tbIn hidden' id='fTabs-4' type='radio' name='postTabs'>
+
+<!--[ Tabs header/title ]-->
+<div class='tbHd scrlH'>
+  <!--[ Change atribute data-text='...' to replace tabs title ]-->
+  <label for='fTabs-1' data-text='Chapter 1'></label>
+  <label for='fTabs-2' data-text='Chapter 2'></label>
+  <label for='fTabs-3' data-text='Chapter 3'></label>
+  <label for='fTabs-3' data-text='Chapter 4'></label>
+</div>
+
+<div class='tbCn'>
+  <!--[ Tabs content ]-->
+  <div class='tbText-1'>
+    content_here
+  </div>
+  
+  <!--[ Tabs content ]-->
+  <div class='tbText-2'>
+    content_here
+  </div>
+  
+  <!--[ Tabs content ]-->
+  <div class='tbText-3'>
+    content_here
+  </div>
+  
+  <!--[ Tabs content ]-->
+  <div class='tbText-4'>
+    content_here
+  </div>
+</div>

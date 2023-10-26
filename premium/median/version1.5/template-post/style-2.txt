@@ -1,0 +1,14 @@
+.Style-2{transition:var(--transition-1)}
+.Style-2, .Style-2 header, .Style-2 .mainMenu, .Style-2 .htmlMenu .close, .Style-2 #LinkList002{background-color:#fafafc; border:0}
+.Style-2 .htmlMenu .close, .Style-2 #LinkList002{width:calc(var(--nav-width))}
+.Style-2 .mainInner:before{content:''; display:block; position:absolute;top:0;left:0;right:0;bottom:0; background-color:#fefefe;z-index:-1; border-radius:15px 0 0 15px; transition:var(--transition-1); box-shadow:0 10px 8px -8px rgb(0 0 0 / 12%)}
+.Style-2 .htmlMenu .link, .Style-2 .htmlMenu > li li a{width:calc(100% - 20px);border-radius:0 20px 20px 0; padding-right:0}
+.Style-2 .navInput:checked ~ .mainWrapper .htmlMenu .link, .Style-2 .navInput:checked ~ .mainWrapper .htmlMenu > li li a{}
+.Style-2.darkMode .mainInner:before, .Style-2.darkMode .postRelated h3, .Style-2.darkMode .postRelated h4, .Style-2.darkMode .postRelated b, .Style-2.darkMode .post .tabsHead > *:after, .Style-2.darkMode .tableOfContainer, .Style-2.darkMode .tableOfHeader{background-color:var(--dark-bgSec)}
+.Style-2.darkMode .downloadInfo, .Style-2.darkMode .postAuthors{background-color:var(--dark-bgAlt)}
+@media screen and (max-width:896px){
+.Style-2 .mainInner:before, .darkMode.Style-2 .mainInner:before{background-color:transparent;box-shadow:none}
+.Style-2 .htmlMenu .close, .Style-2 #LinkList002{background-color:var(--nav-bg)}
+.Style-2.darkMode .postRelated h3, .Style-2.darkMode .postRelated h4, .Style-2.darkMode .postRelated b, .Style-2.darkMode .post .tabsHead > *:after{background-color:var(--dark-bg)}
+.Style-2.darkMode .downloadInfo, .Style-2.darkMode .postAuthors{background-color:var(--dark-bgSec)}
+}

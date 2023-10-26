@@ -1,0 +1,17 @@
+.Style-3, .Style-3 .headerDiv{transition:var(--transition-1)}
+.Style-3 header, .Style-3.darkMode header{background-color:transparent;border:0}
+.Style-3 .mainMenu, .Style-3 .htmlMenu .close, .Style-3 #LinkList002{background-color:#fafafc}
+.Style-3 .htmlMenu .close > *{opacity:0;visibility:hidden}
+.Style-3 .htmlMenu .link, .Style-3 .htmlMenu > li li a{width:calc(100% - 20px);border-radius:0 20px 20px 0; padding-right:0}
+.Style-3.darkMode, .Style-3.darkMode .headerRight, .Style-3.darkMode .tableOfContainer, .Style-3.darkMode .tableOfHeader, .Style-3.darkMode .postRelated h3, .Style-3.darkMode .postRelated h4, .Style-3.darkMode .postRelated b, .Style-3.darkMode .post .tabsHead > *:after{background-color:var(--dark-bgSec)}
+.Style-3.darkMode .downloadInfo, .Style-3.darkMode .postAuthors{background-color:var(--dark-bgAlt)}
+.Style-3 .headerRight{background-color:var(--body-bg)}
+.Style-3 .navInput:checked ~ .mainWrapper #header-widget{display:none}
+.Style-3 .navInput:checked ~ .mainWrapper .headerLeft{width:68px}
+@media screen and (max-width:896px){
+.Style-3 .navInput:checked ~ .mainWrapper #header-widget{display:block}
+.Style-3 .navInput:checked ~ .mainWrapper .headerLeft{width:var(--nav-width)}
+.Style-3.darkMode, .Style-3.darkMode .headerRight{background-color:var(--dark-bg)}
+.Style-3.darkMode .postRelated h3, .Style-3.darkMode .postRelated h4, .Style-3.darkMode .postRelated b, .Style-3.darkMode .post .tabsHead > *:after{background-color:var(--dark-bg)}
+.Style-3.darkMode .downloadInfo, .Style-3.darkMode .postAuthors{background-color:var(--dark-bg)}
+}
