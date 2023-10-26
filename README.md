@@ -25,43 +25,45 @@ Mỗi mẫu được tổ chức trong một thư mục con riêng biệt trong 
 
 ### Chi tiết về cấu trúc thư mục
 
+```js
 blogger-template-collection/
 │
 ├── premium/
-│ ├── template1/
-│ │ ├── version1.0/
-│ │ │ ├── template-v1.0-premium.xml
-│ │ ├── version2.0/
-│ │ │ ├── template-v2.0-premium.xml
-│ ├── template2/
-│ │ ├── version1.0/
-│ │ │ ├── template-v1.0-premium.xml
-│ │ ├── version2.0/
-│ │ │ ├── template-v2.0-premium.xml
+│	├── template1/
+│	│	├── version1.0/
+│	│	│	├── template-v1.0-premium.xml
+│	│	├── version2.0/
+│	│	│	├── template-v2.0-premium.xml
+│	├── template2/
+│	│	├── version1.0/
+│	│	│	├── template-v1.0-premium.xml
+│	│	├── version2.0/
+│	│	│	├── template-v2.0-premium.xml
 │
 ├── free/
-│ ├── template1/
-│ │ ├── version1.0/
-│ │ │ ├── template-v1.0-free.xml
-│ │ ├── version2.0/
-│ │ │ ├── template-v2.0-free.xml
-│ ├── template2/
-│ │ ├── version1.0/
-│ │ │ ├── template-v1.0-free.xml
-│ │ ├── version2.0/
-│ │ │ ├── template-v2.0-free.xml
+│	├── template1/
+│	│	├── version1.0/
+│	│	│	├── template-v1.0-free.xml
+│	│	├── version2.0/
+│	│	│	├── template-v2.0-free.xml
+│	├── template2/
+│	│	├── version1.0/
+│	│	│	├── template-v1.0-free.xml
+│	│	├── version2.0/
+│	│	│	├── template-v2.0-free.xml
 │
 ├── redesigned/
-│ ├── template1/
-│ │ ├── version1.0/
-│ │ │ ├── template-v1.0-redesigned.xml
-│ │ ├── version2.0/
-│ │ │ ├── template-v2.0-redesigned.xml
-│ ├── template2/
-│ │ ├── version1.0/
-│ │ │ ├── template-v1.0-redesigned.xml
-│ │ ├── version2.0/
-│ │ │ ├── template-v2.0-redesigned.xml
+│	├── template1/
+│	│	├── version1.0/
+│	│	│	├── template-v1.0-redesigned.xml
+│	│	├── version2.0/
+│	│	│	├── template-v2.0-redesigned.xml
+│	├── template2/
+│	│	├── version1.0/
+│	│	│	├── template-v1.0-redesigned.xml
+│	│	├── version2.0/
+│	│	│	├── template-v2.0-redesigned.xml
+```
 
 Hãy tham khảo thư mục con cụ thể của mỗi mẫu để biết thông tin chi tiết về từng phiên bản.
 
