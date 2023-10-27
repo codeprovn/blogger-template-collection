@@ -1,0 +1,89 @@
+<style>
+  /*<![CDATA[*/
+  /*! Safelink CSS */
+  .safeT, .safeB{display:none;width:100%;align-items:center;justify-content:center;text-align:center;padding:30px 0}
+  .safeP{position:relative;height:100px;width:100px;display:none;align-items:center;justify-content:center;z-index:1}
+  .safeP svg{height:100%;width:100%;-webkit-transform:rotate(-90deg);-ms-transform:rotate(-90deg);transform:rotate(-90deg);stroke-width:1.5} 
+  .safeP svg .b{fill:none;stroke:#e6e6e6;opacity:.9}
+  .safeP svg .c{fill:none;stroke:var(--linkB);stroke-dasharray:100 100;stroke-dashoffset:100;stroke-linecap:round}
+  .safeP > span{position:absolute;font-size:24px}
+  
+  .sScr{display:none;position:relative;width:100%;font-family:var(--fontBa);border-radius:10px;padding:30px 20px;text-align:center;overflow:hidden}
+  .sScr::before{content:'';position:absolute;z-index:0;top:0;right:0;bottom:0;left:0;background:var(--linkB);opacity:.06}
+  .sScr::after{content:'';width:60px;height:60px;background:rgba(0,0,0,.15);display:block;border-radius:50%;position:absolute;top:-12px;left:-12px;opacity:.1}
+  .sScr .hglt{color:var(--linkC)}
+  .sScr .sScrH{position:relative;z-index:1;font-size:1.2rem;font-weight:700;margin-bottom:15px}
+  .sScr .sScrD{position:relative;z-index:1;font-family:var(--fontB);font-size:13px;opacity:.8;display:inline-flex;align-items:center}
+  .sScr .sScrD svg{width:13px;height:13px;margin-right:5px;stroke-width:1.5}
+  
+  .safeT.vsbl, .safeB.vsbl, .safeT:not(.alt) .safeP{display:flex}
+  .safeT.alt .sScr{display:block}
+  .safeT.nInt .safeP > span{font-size:13px}
+  
+  .Rtl .sScr .sScrD svg{margin-right:0;margin-left:5px}
+  
+  .drK .safeP svg .b{stroke:#404045}
+  .drK .safeP svg .c{stroke:var(--darkU)}
+  .drK .sScr{background:var(--darkBs)}
+  .drK .sScr::before{background:var(--darkBa);opacity:1}
+  .drK .sScr .hglt{color:var(--darkU)}
+  /*]]>*/
+</style>
+
+<!--[ Safelink Countdown Timer ]-->
+<div class='safeT hidden' id='safeT'>
+  <div class='safeP' title='Please wait'>
+    <svg viewBox='0 0 34 34'>
+      <circle class='b' cx='17' cy='17' r='15.92' />
+      <circle class='c' cx='17' cy='17' r='15.92' />
+    </svg>
+    <span id='safeCtd'></span>
+  </div>
+  <div class='sScr'>
+    <div class='sScrH'>Scroll Down and click on <span class='hglt'>Go to Link</span> for destination</div>
+    <div class='sScrD'><svg class='line' viewbox='0 0 24 24'><path d='M22 11.07V12a10 10 0 1 1-5.93-9.14'/><polyline points='23 3 12 14 9 11'/></svg>Congrats! Link is Generated</div>
+  </div>
+</div>
+
+<!--[ Ad 1 ]-->
+<!--<div class='adB h240' data-text='Ads go here'></div>-->
+
+<!--[ Content ]-->
+<div class='safeC'>
+  <p>Blogger is an American online content management system which enables multi-user blogs with time-stamped entries. Pyra Labs developed it before being acquired by Google in 2003. Google hosts the blogs, which can be accessed through a subdomain of blogspot.com. Blogs can also be accessed from a user-owned custom domain (such as www.example.com) by using DNS facilities to direct a domain to Google's servers. A user can have up to 100 blogs or websites per account.</p>
+  <p>Google Blogger also enabled users to publish blogs and websites to their own web hosting server via FTP until May 1, 2010. All such blogs and websites had to be redirected to a blogspot.com subdomain or point their own domain to Google's servers via DNS. Google Blogger has a wide international user base and is available in more than 60 languages, despite its decline in popularity in the United States.</p>
+</div>
+
+<!--[ Ad 2 ]-->
+<!--<div class='adB h240' data-text='Ads go here'></div>-->
+
+<!--[ Content ]-->
+<div class='safeC'>
+  <p>Pyra Labs launched Blogger on August 23, 1999. It is credited with popularizing the format as one of the first dedicated blog-publishing tools. Pyra Labs was purchased by Google in February 2003 for an undisclosed amount. Premium features, which Pyra had actually offered for a fee, were made free as a result of the takeover. Evan Williams, a co-founder of Pyra Labs, left Google in October 2004. Picasa was acquired by Google in 2004, and Picasa and its photo-sharing service Hello were incorporated into Blogger, enabling users to upload images to their blogs.</p>
+  <p>Blogger underwent a major redesign on May 9, 2004, which included web standards-compliant templates, individual archive pages for posts, comments, and email posting. Blogger's new version, codenamed "Invader," was released in beta alongside the gold update on August 14, 2006. Users were moved to Google servers, and new features such as interface language in French, Italian, German, and Spanish were added. In December 2006, this new version of Blogger was taken out of beta. By May 2007, Blogger had completely moved over to Google-operated servers. Blogger was ranked 16 on the list of top 50 domains in terms of number of unique visitors in 2007.</p>
+</div>
+
+<p>Source: <a href='https://en.wikipedia.org/wiki/Blogger_(service)' target='_blank'>https://en.wikipedia.org/wiki/Blogger_(service)</a></p>
+
+<!--[ Ad 3 ]-->
+<!--<div class='adB h240' data-text='Ads go here'></div>-->
+
+<!--[ Safelink Destination Button ]-->
+<div class='safeB' id='safeB'>
+  <a class='button' id='desBtn' href='/' title='Go to Link'><i class='icon demo'></i>Go to Link</a>
+</div>
+
+<script>
+  /*<![CDATA[*/
+  /*! Safelink Settings */
+  var safeSet = {
+    safePar: "#?link",
+    pleaseWait: "Please wait",
+    timer: 15,
+    newTab: true,
+    succNtf: "<i class='check'></i>Link is Generated",
+  }
+  /*]]>*/
+</script>
+
+<script>/*<![CDATA[*/ function _0x11cd(){var t=["replace","charCodeAt","15935tDutkY","target","safeT","6BOrMaY","970808onKEqw","ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=","succNtf","992166wjqPOJ","#safeT .c","location","nInt","fromCharCode","safePar","charAt","1240JxfRBP","hash","style","143974ZgMSKk","has","length","strokeDashoffset","vsbl","timer","50606sNqfCV","indexOf","_utf8_enc","floor","pleaseWait","286EdYWNd","dec","get","safeB","search","setAttribute","innerHTML","includes","split","safeCtd","18nUNdmJ","416412UBvAlg","13552wCvoZQ","_blank","_keyStr","7MEgnGi","180BKxksK"];return(_0x11cd=function(){return t})()}function _0x1df4(t,e){var r=_0x11cd();return(_0x1df4=function(t,e){return r[t-=462]})(t,e)}(function(){for(var t=494,e=495,r=482,n=505,a=484,s=_0x1df4,i=_0x11cd();;)try{if(135404==+parseInt(s(508))+parseInt(s(467))/2*(parseInt(s(t))/3)+parseInt(s(488))/4*(parseInt(s(491))/5)+parseInt(s(498))/6*(parseInt(s(487))/7)+parseInt(s(e))/8*(parseInt(s(r))/9)+-parseInt(s(n))/10*(-parseInt(s(a))/11)+parseInt(s(483))/12*(-parseInt(s(472))/13))break;i.push(i.shift())}catch(t){i.push(i.shift())}})(),function(){var r,n,a,s,t=493,e=475,i=503,f=503,c=478,o=478,d=471,u=497,h=477,S=492,l=485,g=480,_=500,p=480,v=502,C=463,I=502,k=502,w=468,x=486,m=504,N=468,A=502,y=490,B=504,b=_0x1df4,M={_keyStr:b(496),enc:function(t){var e,r,n,a,s,i,f=b,c="",o=0;for(t=M[f(469)](t);o<t[f(463)];)n=(i=t[f(y)](o++))>>2,a=(3&i)<<4|(e=t[f(490)](o++))>>4,s=(15&e)<<2|(r=t.charCodeAt(o++))>>6,i=63&r,isNaN(e)?s=i=64:isNaN(r)&&(i=64),c=c+this[f(486)][f(504)](n)+this._keyStr[f(B)](a)+this[f(486)][f(B)](s)+this._keyStr[f(504)](i);return c},dec:function(t){var e,r,n,a,s,i=b,f="",c=0;for(t=t.replace(/[^A-Za-z0-9\+\/\=]/g,"");c<t.length;)e=this[i(486)][i(w)](t[i(504)](c++))<<2|(n=this[i(x)][i(w)](t[i(m)](c++)))>>4,r=(15&n)<<4|(a=this._keyStr[i(w)](t.charAt(c++)))>>2,n=(3&a)<<6|(s=this[i(x)][i(N)](t[i(504)](c++))),f+=String[i(A)](e),64!=a&&(f+=String.fromCharCode(r)),64!=s&&(f+=String.fromCharCode(n));return M._utf8_dec(f)},_utf8_enc:function(t){var e=b;t=t[e(489)](/\r\n/g,"\n");for(var r="",n=0;n<t[e(C)];n++){var a=t[e(490)](n);a<128?r+=String[e(I)](a):(127<a&&a<2048?r+=String.fromCharCode(a>>6|192):(r+=String[e(I)](a>>12|224),r+=String[e(k)](a>>6&63|128)),r+=String[e(502)](63&a|128))}return r},_utf8_dec:function(t){for(var e=b,r="",n=0,a=c1=c2=0;n<t[e(463)];)(a=t[e(490)](n))<128?(r+=String[e(502)](a),n++):191<a&&a<224?(c2=t.charCodeAt(n+1),r+=String[e(v)]((31&a)<<6|63&c2),n+=2):(c2=t[e(490)](n+1),c3=t[e(490)](n+2),r+=String.fromCharCode((15&a)<<12|(63&c2)<<6|63&c3),n+=3);return r}},T=getid(b(t)),q=getid(b(e)),K=getid(b(481)),P=qSel(b(499)),E=getid("desBtn");function J(t){var e=b,r=window[e(500)][e(476)];const n=new URLSearchParams(r);return n[e(462)](t)?n[e(474)](t):void 0}function O(t){var e=b;const r=window.location[e(506)];if(r&&r[e(479)]("=")&&r.split(/=(.*)/s)[0]==t&&""!=r[e(g)](/=(.*)/s)[1])return window[e(_)].hash[e(p)](/=(.*)/s)[1]}null==J(safeSet[b(i)])&&null==O(safeSet[b(503)])||(r=null!=J(safeSet[b(f)])?M.dec(J(safeSet[b(503)])):M[b(473)](O(safeSet[b(503)])),K[b(478)]=0,addCt(T,b(465)),n=100*safeSet[b(466)],a=n,s=setInterval(function(){var e=b,t=--a/n*100;K[e(c)]=Math[e(470)](100-t),P[e(507)][e(464)]=t,a<=0&&(clearInterval(s),addCt(T,e(501)),K[e(o)]=safeSet[e(d)],setTimeout(()=>{var t=e;addCt(T,"alt"),toastNotif(safeSet[t(u)]),E.href=r,1==safeSet.newTab&&E[t(h)](t(S),t(l)),addCt(q,t(465))},4e3))},10))}(); /*]]>*/</script>

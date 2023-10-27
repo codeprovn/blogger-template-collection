@@ -1,0 +1,46 @@
+<style>
+  /*<![CDATA[*/
+  /*! SafeLink Generator CSS */
+  .hidden{display:none !important}
+  button{cursor:pointer}
+  button:hover{opacity:.9}
+  /*]]>*/
+</style>
+
+<svg style='width:100%;height:70px;margin-bottom:30px;' class='line' viewBox='0 0 24 24'><g transform='translate(3.500000, 2.000000)'><path d='M8.4845,19.6057 C10.8195,19.6057 16.1565,17.2837 16.1565,10.8787 C16.1565,4.4747 16.4345,3.9737 15.8195,3.3577 C15.2035,2.7417 11.9935,0.7507 8.4845,0.7507 C4.9755,0.7507 1.7655,2.7417 1.1505,3.3577 C0.5345,3.9737 0.8125,4.4747 0.8125,10.8787 C0.8125,17.2837 6.1505,19.6057 8.4845,19.6057 Z'/><polyline class='svgC' points='5.8859 9.8748 7.7779 11.7698 11.6759 7.8698'/></g></svg>
+
+<div class='cArea'>
+  <label>
+    <input class='cInpt' id='safeIn' name='' type='text' />
+    <span class='n req'>Enter Link here</span>
+  </label>
+</div>
+<div class='cArea'>
+  <label>
+    <input class='cInpt' id='safeOut' name='' type='text' readonly />
+    <span class='n'>Protected Link</span>
+  </label>
+</div>
+<div class='cArea'>
+  <button class='button' id='safeGen' title='Protect Link'>Protect Link</button>
+  <button class='button hidden' id='safeCpy' title='Copy'>Copy</button>
+  <button class='button hidden' id='safeViw' title='View'>View</button>
+</div>
+
+<script>
+  /*Safelink Settings*/
+  var safeSet = {
+    desPages: [
+      "https://plus-ui.fineshopdesign.com/p/destination-1.html",
+      "https://plus-ui.fineshopdesign.com/p/destination-2.html",
+      "https://plus-ui.fineshopdesign.com/2022/04/realtime-post-views-counter.html",
+      "https://plus-ui.fineshopdesign.com/2022/04/setup-star-rating-widget.html"
+    ],
+    safePar: "#?link",
+    succNtf: "<i class='check'></i>Link Protected, Click on Copy",
+    entrNtf: "<i class='warn'></i>Enter link to protect!",
+    cpydNtf: "<i class='clipboard'></i>Copied to clipboard!",
+  }
+</script>
+
+<script>/*<![CDATA[*/ function _0x2585(t,n){var r=_0x320e();return(_0x2585=function(t,n){return r[t-=485]})(t,n)}function _0x320e(){var t=["data-text","toString","addEventListener","indexOf","_blank","apply","removeAllRanges","click","replace","28gIlqOB","execCommand","open","27767564GVgoby","charCodeAt","charAt","hidden","6ATRLic","5067349NTWJYt","ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=","fromCharCode","safeOut","constructor","1017136eMfyed","length","4QApMaD","setAttribute","blur","(((.+)+)+)+$","safeIn","safeViw","input","15583572ajSpNY","http://","copy","5795768guFglI","_utf8_dec","_utf8_enc","safePar","search","random","_keyStr","1469682ntxLmM","https://","safeCpy","214270fbtmlb","floor","value","onclick","desPages","10oxJDMd"];return(_0x320e=function(){return t})()}(function(){var t=930,n=901,r=917,e=1448,i=902,a=928,f=937,u=910,c=1436,o=916;function s(t,n){return _0x2585(n-923,t)}function _(t,n){return _0x2585(n-411,t)}for(var x=_0x320e();;)try{if(903566==+parseInt(_(t,915))+-parseInt(_(n,r))/2*(-parseInt(s(e,1446))/3)+-parseInt(_(884,i))/4*(parseInt(_(a,f))/5)+parseInt(s(1428,1421))/6*(parseInt(_(928,u))/7)+-parseInt(s(1452,1439))/8+-parseInt(s(1440,c))/9*(-parseInt(_(956,942))/10)+-parseInt(_(o,905))/11)break;x.push(x.shift())}catch(t){x.push(x.shift())}})(),function(){var e,t=105,n=85,r=232,i=246,a=107,f=217,u=192,c=231,o=153,s=234,_=139,x=94,d=86,h=1295,g=248,p=201,l=225,v=231,S=163,C=165,m=162,I=172,b=156,y=934,A=973,N=949,k=154,w=951,M=977,L=964,O=974,q=942,D=925,G=459,J=1452,P=1429,R=1418,T=445,V={_0x5f33a4:742},Y=657,j=1388,z=662,B=673,E=1040,F=1025,Q=301,W=295,Z=1036,H=346,K=327,U=866,X=319,$=174,tt=22,nt=118,rt=100,et=54,it=63,at=38,ft=54,ut=49,ct=48,ot=23,st=111,_t=100,xt=53,dt=63,ht=74,gt=40,pt=85,lt=1348,vt=1367,St=1352,Ct=1337,mt=1352,It=1352,bt=1319,yt=387,At=363,Nt=633,kt=628,wt=363,Mt=127,Lt=(e=!0,function(n,r){var t=e?function(){if(r){var t=r[_0x2585(1083-596,1072)](n,arguments);return r=null,t}}:function(){};return e=!1,t})(this,function(){function t(t,n){return _0x2585(t-Mt,n)}function n(t,n){return _0x2585(n- -146,t)}return Lt[n(393,yt)]().search(n(342,At))[t(660,672)]()[t(630,Nt)](Lt)[t(647,kt)](n(385,wt))});function Ot(t,n){return _0x2585(t- -395,n)}Lt();for(var qt={_keyStr:Ot(t,n),enc:function(t){var n,r,e,i,a,f,u="";function c(t,n){return _0x2585(n-830,t)}function o(t,n){return _0x2585(n-830,t)}var s=0;for(t=qt[o(1343,lt)](t);s<t[c(1333,1335)];)e=(f=t.charCodeAt(s++))>>2,i=(3&f)<<4|(n=t.charCodeAt(s++))>>4,a=(15&n)<<2|(r=t.charCodeAt(s++))>>6,f=63&r,isNaN(n)?a=f=64:isNaN(r)&&(f=64),u=u+this[o(vt,St)][o(1339,1326)](e)+this[o(Ct,mt)][c(1303,1326)](i)+this[o(1347,It)][c(1321,1326)](a)+this[o(1346,1352)][o(bt,1326)](f);return u},dec:function(t){var n,r,e,i,a,f={_0x12bdfb:534},u="",c=0;function o(t,n){return _0x2585(n- -422,t)}function s(t,n){return _0x2585(t- -f._0x12bdfb,n)}for(t=t[s(-44,-tt)](/[^A-Za-z0-9\+\/\=]/g,"");c<t[s(-29,-16)];)n=this[o(nt,rt)][o(et,it)](t[s(-at,-ft)](c++))<<2|(e=this._keyStr[s(-ut,-ct)](t[s(-at,-ot)](c++)))>>4,r=(15&e)<<4|(i=this[o(st,_t)][o(xt,63)](t[o(ft,74)](c++)))>>2,e=(3&i)<<6|(a=this._keyStr[o(42,dt)](t[o(61,ht)](c++))),u+=String.fromCharCode(n),64!=i&&(u+=String[o(77,79)](r)),64!=a&&(u+=String[s(-33,-gt)](e));return u=qt[o(pt,95)](u)},_utf8_enc:function(t){t=t.replace(/\r\n/g,"\n");var n="";function r(t,n){return _0x2585(n- -$,t)}for(var e=0;e<t.length;e++){var i=t.charCodeAt(e);i<128?n+=String[r(312,327)](i):127<i&&i<2048?(n+=String.fromCharCode(i>>6|192),n+=String[r(H,K)](63&i|128)):(n+=String[_0x2585(863-362,U)](i>>12|224),n+=String[r(X,327)](i>>6&63|128),n+=String.fromCharCode(63&i|128))}return n},_utf8_dec:function(t){var r={_0x9fb2ef:535};var n="",e=0;function i(t,n){return _0x2585(n-r._0x9fb2ef,t)}for(var a=c1=c2=0;e<t[i(1026,E)];)(a=t[i(F,1030)](e))<128?(n+=String[i(1040,1036)](a),e++):191<a&&a<224?(c2=t[_0x2585(Q- -194,W)](e+1),n+=String[i(1035,Z)]((31&a)<<6|63&c2),e+=2):(c2=t.charCodeAt(e+1),c3=t.charCodeAt(e+2),n+=String.fromCharCode((15&a)<<12|(63&c2)<<6|63&c3),e+=3);return n}},Dt=qSell(".widget input[type=text], .widget input[type=email], .widget textarea"),Gt=0;Gt<Dt[Vt(-237,-233)];Gt++)Dt[Gt][Ot(139,127)](Ot(117,122),function(){var r={_0x2ce6d1:141},t=this[n(Y,669)]?"fl":"nfl";function n(t,n){return _0x2585(n-r._0x2ce6d1,t)}this[_0x2585(j-881,1386)](n(z,B),t)});var Jt=getid(Vt(-r,-i)),Pt=getid(Ot(a,123)),a=getid("safeGen"),Rt=getid(Vt(-f,-u)),Tt=getid(Vt(-c,-217));function Vt(t,n){return _0x2585(t- -V._0x5f33a4,n)}Jt[Ot(139,o)](Vt(-s,-241),function(){var r=959,e=944,t=Jt[i(-431,-428)];function n(t,n){return _0x2585(t-e,n)}function i(t,n){return _0x2585(t- -r,n)}return~t[i(-474,-G)](n(1468,J))||~t[n(P,R)](i(-T,-444))||""==t||(t="https://"+t),Jt[i(-431,-413)]=t,Jt}),a[Ot(_,121)](Vt(-253,-s),function(){var n=1272,e=1280,i=1253,a=1273,r=365;function t(t,n){return _0x2585(n- -r,t)}function f(t,n){return _0x2585(t-445,n)}var u,c,o=safeSet[t(S,C)][Math[t(156,m)](Math[t(I,b)]()*safeSet[t(179,165)][f(950,y)])];""!=Jt[f(A,N)]?(u=qt.enc(Jt.value),c=o+(safeSet.safePar.includes("#")?"":"?")+safeSet[t(151,k)]+"="+u,Pt[f(973,w)]=c,Pt[t(159,142)](f(M,L),"fl"),Tt[f(O,991)]=function(){var r=787;function t(t,n){return _0x2585(n-r,t)}window[t(n,e)](c,t(i,a))},remCt(Rt,t(129,132)),remCt(Tt,f(q,D)),toastNotif(safeSet.succNtf),console.log(qt.dec(u))):toastNotif(safeSet.entrNtf)}),Rt[Vt(-208,-198)](Ot(x,d),function(){var r=740,t=(Pt[e(h,1290)],getSelection());function n(t,n){return _0x2585(n- -r,t)}function e(t,n){return _0x2585(t-767,n)}t[e(1255,1268)](),Pt.select(),document[n(-263,-g)](n(-p,-l)),t[n(-v,-252)](),toastNotif(safeSet.cpydNtf)})}(); /*]]>*/</script>

@@ -1,0 +1,92 @@
+<style>/*<![CDATA[*/
+/* To change Header Subtitle */
+.headH .headSub{max-width:none}
+.headH .headSub::before{content:"About"}
+/* About Author CSS */ .aboutAuthor{padding:60px 0 20px 0} .aboutAuthor .aboutCont{justify-content:center;position:relative;display:flex;max-width:95%;margin:auto;padding:80px 30px 95px 30px;background-color:#fff;box-shadow:0 10px 40px rgba(149,157,165,.2);border-radius:20px} .aboutAuthor .aboutCont img{box-shadow:0 5px 20px rgba(0,0,0,.2);padding:0;border:7px solid #fff;width:120px;height:120px;position:absolute;border-radius:50%;top:-60px;pointer-events:none} .aboutAuthor .aboutCont p{margin:0;text-align:center;font-family:var(--fontBa)} .drK .aboutAuthor .aboutCont{background:var(--darkBs);box-shadow:0 10px 40px rgba(0,0,0,.2)} .drkM .aboutAuthor .aboutCont img{background-image:linear-gradient(to top right,#363636,#717171);border-color:#fff;box-shadow:0 10px 40px rgba(0,0,0,.2)}.drK .aboutAuthor .aboutCont img{border-color:var(--darkBs);box-shadow:0 10px 40px rgba(0,0,0,.2)}
+/* About Author Button */ .aboutAuthor .aboutCont .athrBtn{text-align:center;position:absolute;bottom:0;left:0;right:0} .aboutAuthor .aboutCont .athrBtn .button{border-radius:50px;margin:0 0 30px} .aboutAuthor .aboutCont .athrBtn .button svg{stroke:var(--darkT);margin-right:5px}
+/* Website Stats */ .statsHeading{text-align:center} .statsWebsite{display:flex;flex-wrap:wrap;flex-direction:column;margin:12px auto} .statsCont{background-color:#fff;display:flex;justify-content:center;padding:8px;width:95%;margin:12px auto;box-shadow:0 5px 20px rgba(149,157,165,.2);border-radius:20px} .statsCont .stats{height:80px;width:200px;display:flex;align-items:center;justify-content:center; flex-direction:column; margin:0 35px} .statsCont .statsName{display:inline-flex;align-items:center;font-size:16px;font-family:var(--fontBa)} .statsCont .statsName svg{margin-right:7px} .statsCont .statsNumber{font-family:var(--fontB);font-size:30px;margin-top:6px;font-weight:normal} .statsNumber.v >span::before{content:attr(data-text)} .drK .statsCont{background-color:var(--darkBs);box-shadow:0 5px 20px rgba(0,0,0,.2)}
+/* To change Profile background */
+/* Light Mode */
+.aboutAuthor .aboutCont img{background-color:#ffeaef}
+/* Dark Mode */
+.drK .aboutAuthor .aboutCont img{background-image:linear-gradient(to top right,#363636,#717171)}
+/*]]>*/</style>
+
+<script>
+  /*<![CDATA[*/
+  function statsPst(json){var el = qSel('.statsNumber.p');el.innerHTML = '<span>' + parseInt(json.feed.openSearch$totalResults.$t,10) + '</span>'};
+  function statsCmt(json){var el = qSel('.statsNumber.c');el.innerHTML = '<span>' + parseInt(json.feed.openSearch$totalResults.$t,10) + '</span>'};
+  if(isPrivateBlog!='true'){
+    Defer.js(blogUrl+'feeds/posts/default?alt=json-in-script&callback=statsPst', 'sts-pst');
+    Defer.js(blogUrl+'feeds/comments/default?alt=json-in-script&callback=statsCmt', 'sts-cmt');
+  };
+  /*]]>*/
+</script>
+
+<!--[ About Author ]-->
+<div class='aboutAuthor'>
+  <div class='aboutCont'>
+    <!--[ Author Profile Picture, Recommended Sizes: 1280×1280px, 720×720px below 30KB for fast loading, use transparent picture ]-->
+    <img alt='alt_here' src='https://blogger.googleusercontent.com/img/a/AVvXsEjoxZtW_TZT562Uhh7gZwooADMcl56yuTdx-vblRzzWiG4FoFh7N_bgOpu3MxdU_4AeMkmazQcxq9gk542w7ecNc4aBYyVK4Og6TUjsikgS4n7fDZMThgGI4SswPMBGixd8bjErpjFApmUCgcF337XmbbMuLub11pHV4KG4misX3H5fggohZHvN2UGV1w' />
+    <!--[ Author Description ]-->
+    <p>Lorem ipsum dolor sit amet. Qui ratione rerum vel odit alias qui totam placeat! Aut esse sint hic possimus reprehenderit et consectetur beatae  voluptates fugit. A earum vero et quos ipsa vel voluptatum sequi vel numquam nostrum eum explicabo vero.<br/><br/>This is a sample About Us/About Author Page.</p>
+    <div class='athrBtn'>
+      <a class='button' href='https://www.blogger.com/profile/16542346501107515979' target='_blank'>
+        <!--[ Button SVG ]-->
+        <svg class='line' viewBox='0 0 24 24'><g transform='translate(5.000000, 2.400000)'><path d='M6.84454545,19.261909 C3.15272727,19.261909 -8.52651283e-14,18.6874153 -8.52651283e-14,16.3866334 C-8.52651283e-14,14.0858516 3.13272727,11.961909 6.84454545,11.961909 C10.5363636,11.961909 13.6890909,14.0652671 13.6890909,16.366049 C13.6890909,18.6658952 10.5563636,19.261909 6.84454545,19.261909 Z'/><path d='M6.83729838,8.77363636 C9.26002565,8.77363636 11.223662,6.81 11.223662,4.38727273 C11.223662,1.96454545 9.26002565,-1.0658141e-14 6.83729838,-1.0658141e-14 C4.41457111,-1.0658141e-14 2.45,1.96454545 2.45,4.38727273 C2.44184383,6.80181818 4.39184383,8.76545455 6.80638929,8.77363636 C6.81729838,8.77363636 6.82729838,8.77363636 6.83729838,8.77363636 Z'/></g></svg>
+        <!--[ Button Text ]-->
+        Author Profile
+      </a>
+    </div>
+  </div>
+</div>
+
+<h3 class='statsHeading'>
+  <!--[ Stats Heading ]-->
+  Blog Stats
+</h3>
+
+<!--[ Website Statistics ]-->
+<div class='statsWebsite'>
+  <!--[ Page Views Count ]-->
+  <div class='statsCont'>
+    <div class='stats'>
+      <div class='statsName'>
+        <!--[ Change SVG Icon ]-->
+        <svg class='line' viewBox='0 0 24 24'><g transform='translate(2.000000, 4.000000)'><path d='M13.1643,8.0521 C13.1643,9.7981 11.7483,11.2141 10.0023,11.2141 C8.2563,11.2141 6.8403,9.7981 6.8403,8.0521 C6.8403,6.3051 8.2563,4.8901 10.0023,4.8901 C11.7483,4.8901 13.1643,6.3051 13.1643,8.0521 Z'></path><path d='M0.7503,8.0521 C0.7503,11.3321 4.8923,15.3541 10.0023,15.3541 C15.1113,15.3541 19.2543,11.3351 19.2543,8.0521 C19.2543,4.7691 15.1113,0.7501 10.0023,0.7501 C4.8923,0.7501 0.7503,4.7721 0.7503,8.0521 Z'></path></g></svg>
+        <!--[ Stats Name ]-->
+        Total Visits
+      </div>
+      <div class='statsNumber v'>
+        <!--[ Posts Number (automatically updates) ]-->
+        <span class='pu-views' data-id='WebsiteStats' data-text='0'></span>
+      </div>
+    </div>
+  </div>
+  
+  <!--[ Posts Number ]-->
+  <div class='statsCont'>
+    <div class='stats'>
+      <div class='statsName'>
+        <!--[ Change SVG Icon ]-->
+        <svg class='line' viewBox='0 0 24 24'><g transform='translate(2.000000, 2.000000)'><path d='M10.0002,0.7501 C3.0632,0.7501 0.7502,3.0631 0.7502,10.0001 C0.7502,16.9371 3.0632,19.2501 10.0002,19.2501 C16.9372,19.2501 19.2502,16.9371 19.2502,10.0001'/><path d='M17.5285,2.3038 L17.5285,2.3038 C16.5355,1.4248 15.0185,1.5168 14.1395,2.5098 C14.1395,2.5098 9.7705,7.4448 8.2555,9.1578 C6.7385,10.8698 7.8505,13.2348 7.8505,13.2348 C7.8505,13.2348 10.3545,14.0278 11.8485,12.3398 C13.3435,10.6518 17.7345,5.6928 17.7345,5.6928 C18.6135,4.6998 18.5205,3.1828 17.5285,2.3038 Z'/><line x1='13.009' y1='3.8008' x2='16.604' y2='6.9838'/></g></svg>
+        <!--[ Stats Name ]-->
+        Posts
+      </div>
+      <div class='statsNumber p'>0</div>
+    </div>
+  </div>
+  
+  <!--[ Comments Number ]-->
+  <div class='statsCont'>
+    <div class='stats'>
+      <div class='statsName'>
+        <!--[ Change SVG Icon ]-->
+        <svg class='line' viewBox='0 0 24 24'><g transform='translate(2.000000, 2.000000)'><line x1='13.9394' y1='10.413' x2='13.9484' y2='10.413'></line><line x1='9.9304' y1='10.413' x2='9.9394' y2='10.413'></line><line x1='5.9214' y1='10.413' x2='5.9304' y2='10.413'/><path d='M17.0710351,17.0698449 C14.0159481,20.1263505 9.48959549,20.7867004 5.78630747,19.074012 C5.23960769,18.8538953 1.70113357,19.8338667 0.933341969,19.0669763 C0.165550368,18.2990808 1.14639409,14.7601278 0.926307229,14.213354 C-0.787154393,10.5105699 -0.125888852,5.98259958 2.93020311,2.9270991 C6.83146881,-0.9756997 13.1697694,-0.9756997 17.0710351,2.9270991 C20.9803405,6.8359285 20.9723008,13.1680512 17.0710351,17.0698449 Z'/></g></svg>
+        <!--[ Stats Name ]-->
+        Comments
+      </div>
+      <div class='statsNumber c'>0</div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,84 @@
+<style>
+  /*<![CDATA[[*/
+  /*! Safelink CSS */
+  .safeT, .safeB{display:none;align-items:center;justify-content:center;text-align:center;padding:30px 0}
+  .safeP{position:relative;height:30px;width:100%;display:none;align-items:center;justify-content:center;z-index:0;border-radius:var(--buttonR);overflow:hidden}
+  .safeP::before{content:''; position: absolute;top:0;right:0;bottom:0;left:0; background:var(--linkC);opacity:.2}
+  .safeW{position: absolute;top:0;bottom:0;left:0;width:0;background:var(--linkC);opacity:.1}
+  .safeP > span{position:absolute;font-size:13px}
+  
+  .sScr{display:none;position:relative;width:100%;font-family:var(--fontBa);border-radius:10px;padding:30px 20px;text-align:center;overflow:hidden}
+  .sScr::before{content:'';position:absolute;z-index:0;top:0;right:0;bottom:0;left:0;background:var(--linkB);opacity:.06}
+  .sScr::after{content:'';width:60px;height:60px;background:rgba(0,0,0,.15);display:block;border-radius:50%;position:absolute;top:-12px;left:-12px;opacity:.1}
+  .sScr .hglt{color:var(--linkC)}
+  .sScr .sScrH{position:relative;z-index:1;font-size:1.2rem;font-weight:700;margin-bottom:15px}
+  .sScr .sScrD{position:relative;z-index:1;font-family:var(--fontB);font-size:13px;opacity:.8;display:inline-flex;align-items:center}
+  .sScr .sScrD svg{width:13px;height:13px;margin-right:5px;stroke-width:1.5}
+  
+  .safeT.vsbl, .safeB.vsbl, .safeT:not(.alt) .safeP{display:flex}
+  .safeT.alt .sScr{display:block}
+  .safeT.nInt .safeP > span{font-size:13px}
+  
+  .Rtl .safeW{left:unset;right:0}
+  .Rtl .sScr .sScrD svg{margin-right:0;margin-left:5px}
+  
+  .drK .safeP::before{background:var(--darkBs);opacity:1}
+  .drK .safeW{background:var(--darkBa);opacity:1}
+  .drK .sScr{background:var(--darkBs)}
+  .drK .sScr::before{background:var(--darkBa);opacity:1}
+  .drK .sScr .hglt{color:var(--darkU)}
+  /*]]>*/
+</style>
+
+<!--[ Safelink Countdown Timer ]-->
+<div class='safeT hidden' id='safeT'>
+  <div class='safeP'>
+    <div class='safeW' id='safeW'></div>
+    <span id='safeCtd'></span>
+  </div>
+  <div class='sScr'>
+    <div class='sScrH'>Scroll Down and click on <span class='hglt'>Go to Link</span> for destination</div>
+    <div class='sScrD'><svg class='line' viewbox='0 0 24 24'><path d='M22 11.07V12a10 10 0 1 1-5.93-9.14'/><polyline points='23 3 12 14 9 11'/></svg>Congrats! Link is Generated</div>
+  </div>
+</div>
+
+<!--[ Ad 1 ]-->
+<div class='adB h240' data-text='Ads go here'></div>
+
+<!--[ Content ]-->
+<div class='safeC'>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam egestas vitae odio et consectetur. Suspendisse potenti. Vestibulum sollicitudin urna ac nisl commodo gravida. Aenean porta tempus orci molestie gravida. Praesent lobortis fringilla hendrerit. Aliquam arcu nisi, consequat eget lacus a, fermentum faucibus erat. Vivamus eleifend mollis velit, non hendrerit lorem bibendum consequat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean non mi quis odio vehicula tristique. Proin ut dolor ut nunc volutpat euismod. In eu tortor mattis ante sagittis dignissim.</p>
+  <p>Sed ut lobortis velit. Morbi nec egestas sapien. Proin viverra sem at sollicitudin varius. Donec convallis sit amet odio in tincidunt. Vivamus aliquam, neque id finibus tincidunt, felis risus euismod enim, at ultrices dui odio id sapien. Nam pharetra sapien in nulla sodales, nec sagittis massa tincidunt. Mauris tincidunt erat in augue volutpat, pretium molestie ex rutrum. Nulla facilisi. Nam imperdiet molestie dignissim. Donec ultrices interdum lectus. Etiam congue sapien in lacus pellentesque, molestie convallis nulla cursus. Fusce aliquam nisl non quam lacinia iaculis. Curabitur venenatis justo nec nibh vestibulum laoreet.</p>
+</div>
+
+<!--[ Ad 2 ]-->
+<div class='adB h240' data-text='Ads go here'></div>
+
+<!--[ Content ]-->
+<div class='safeC'>
+  <p>Morbi consectetur neque vitae ultrices tincidunt. Duis dictum mauris ac tellus suscipit condimentum. In quis posuere sapien, sit amet lobortis leo. Maecenas placerat lacinia dui, ac molestie est cursus sed. Sed rutrum luctus ante vitae convallis. Vestibulum sodales sodales justo, sit amet tristique est egestas et. Maecenas egestas maximus nisl id rhoncus. Nulla tincidunt sollicitudin nisi, id molestie orci maximus sed.</p>
+  <p>Morbi gravida sem a ipsum iaculis ullamcorper. Donec dignissim leo sit amet ex euismod suscipit. Maecenas erat nulla, scelerisque et metus sed, dapibus laoreet purus. Donec quis faucibus augue, ac condimentum felis. Pellentesque blandit, dui nec sodales ultrices, tellus eros consectetur dolor, ut tristique orci lacus convallis odio. Maecenas suscipit sapien eu tortor imperdiet hendrerit. Aenean a augue lectus. Maecenas dictum pulvinar est eget mollis. Mauris facilisis magna at augue bibendum venenatis. Etiam dolor justo, pretium non nibh sed, maximus fringilla dui. Suspendisse potenti. Nullam velit velit, ornare a lacinia at, laoreet eget massa.</p>
+</div>
+
+<!--[ Ad 3 ]-->
+<div class='adB h240' data-text='Ads go here'></div>
+
+<!--[ Safelink Destination Button ]-->
+<div class='safeB' id='safeB'>
+  <a class='button' id='desBtn' href='/' title='Go to Link'><i class='icon demo'></i>Go to Link</a>
+</div>
+
+<script>
+  /*<![CDATA[*/
+  /*! Safelink Settings */
+  var safeSet = {
+    safePar: "#?link",
+    pleaseWait: "Please wait...",
+    timer: 15,
+    newTab: true,
+    succNtf: "<i class='check'></i>Link is Generated",
+  }
+  /*]]>*/
+</script>
+
+<script>/*<![CDATA[*/ function _0x3db6(){var t=["841939XEChKG","charCodeAt","213PCfqVv","width","nInt","has","safeCtd","2380tPluYS","indexOf","24AXffYR","safeT","replace","charAt","6uRloDX","split","safeW","_keyStr","vsbl","448128gwzHWW","_utf8_enc","hash","target","get","29PiqCiy","216110Ncgwnd","ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=","setAttribute","_blank","location","6375756nDowLA","dec","fromCharCode","1206310jBQxIz","length","style","innerHTML","timer","772uuCuNU","includes","alt","search","55ZhfgAM","desBtn","safePar"];return(_0x3db6=function(){return t})()}function _0x4fb7(t,r){var e=_0x3db6();return(_0x4fb7=function(t,r){return e[t-=111]})(t,r)}(function(){for(var t=111,r=134,e=125,n=145,a=112,s=129,f=_0x4fb7,i=_0x3db6();;)try{if(135870==+parseInt(f(t))*(parseInt(f(139))/2)+-parseInt(f(r))/3*(-parseInt(f(e))/4)+parseInt(f(120))/5+parseInt(f(n))/6*(parseInt(f(132))/7)+parseInt(f(141))/8*(parseInt(f(150))/9)+-parseInt(f(a))/10*(-parseInt(f(s))/11)+-parseInt(f(117))/12)break;i.push(i.shift())}catch(t){i.push(i.shift())}})(),function(){var e,n,a,s,t=131,r=118,f=131,i=149,o=135,c=127,u=153,d=152,h=126,S=146,g=128,l=154,C=121,_=133,v=119,p=143,I=133,b=119,w=119,x=121,m=148,A=140,N=148,y=144,P=133,k=133,T=148,W=144,z=148,B=_0x4fb7,L={_keyStr:B(113),enc:function(t){var r,e,n,a,s,f,i=B,o="",c=0;for(t=L[i(151)](t);c<t.length;)n=(f=t[i(P)](c++))>>2,a=(3&f)<<4|(r=t[i(133)](c++))>>4,s=(15&r)<<2|(e=t[i(k)](c++))>>6,f=63&e,isNaN(r)?s=f=64:isNaN(e)&&(f=64),o=o+this[i(T)][i(W)](n)+this[i(148)].charAt(a)+this._keyStr[i(144)](s)+this[i(z)][i(W)](f);return o},dec:function(t){var r,e,n,a,s,f=B,i="",o=0;for(t=t[f(143)](/[^A-Za-z0-9\+\/\=]/g,"");o<t[f(x)];)r=this[f(m)][f(140)](t[f(144)](o++))<<2|(n=this[f(148)][f(A)](t[f(144)](o++)))>>4,e=(15&n)<<4|(a=this[f(N)][f(A)](t[f(144)](o++)))>>2,n=(3&a)<<6|(s=this._keyStr[f(140)](t[f(y)](o++))),i+=String[f(119)](r),64!=a&&(i+=String.fromCharCode(e)),64!=s&&(i+=String[f(119)](n));return L._utf8_dec(i)},_utf8_enc:function(t){var r=B;t=t[r(p)](/\r\n/g,"\n");for(var e="",n=0;n<t[r(121)];n++){var a=t[r(I)](n);a<128?e+=String.fromCharCode(a):(127<a&&a<2048?e+=String[r(b)](a>>6|192):(e+=String.fromCharCode(a>>12|224),e+=String.fromCharCode(a>>6&63|128)),e+=String[r(w)](63&a|128))}return e},_utf8_dec:function(t){for(var r=B,e="",n=0,a=c1=c2=0;n<t[r(C)];)(a=t[r(_)](n))<128?(e+=String[r(119)](a),n++):191<a&&a<224?(c2=t.charCodeAt(n+1),e+=String.fromCharCode((31&a)<<6|63&c2),n+=2):(c2=t[r(_)](n+1),c3=t[r(133)](n+2),e+=String[r(v)]((15&a)<<12|(63&c2)<<6|63&c3),n+=3);return e}},M=getid(B(142)),R=getid("safeB"),X=getid(B(138)),q=getid(B(147)),D=getid(B(130));function H(t){var r=B,e=window[r(116)][r(g)];const n=new URLSearchParams(e);return n[r(137)](t)?n[r(l)](t):void 0}function U(t){var r=B;const e=window[r(116)][r(d)];if(e&&e[r(h)]("=")&&e[r(146)](/=(.*)/s)[0]==t&&""!=e[r(146)](/=(.*)/s)[1])return window[r(116)][r(d)][r(S)](/=(.*)/s)[1]}null==H(safeSet.safePar)&&null==U(safeSet[B(t)])||(e=null!=H(safeSet.safePar)?L[B(118)](H(safeSet[B(131)])):L[B(r)](U(safeSet[B(f)])),X[B(123)]=0,addCt(M,B(i)),n=100*safeSet[B(124)],a=n,s=setInterval(function(){var r=B,t=--a/n*100;X[r(123)]=Math.floor(100-t)+"%",q[r(122)][r(o)]=100-t+"%",a<=0&&(clearInterval(s),addCt(M,r(136)),X[r(123)]=safeSet.pleaseWait,setTimeout(()=>{var t=r;addCt(M,t(c)),toastNotif(safeSet.succNtf),D.href=e,1==safeSet.newTab&&D[t(114)](t(u),t(115)),addCt(R,t(149))},4e3))},10))}(); /*]]>*/</script>

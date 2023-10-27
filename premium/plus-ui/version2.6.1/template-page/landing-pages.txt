@@ -1,0 +1,574 @@
+<p class='hidden'>My Post Snippet Here</p>
+<!--more-->
+
+<!--[ Custom style ]-->
+<style>
+  /*<![CDATA[*/
+  .brdCmb, .pTtl.itm, .pInf.ps, .pSh, .pAd, .admAbt, .pFoot, .mainIn .blogTopc, .blogCont::after, .blogCont::before, aside.sidebar, .blogAd{display:none}
+  .blogCont > .secIn:first-child, .blogM, .onPs .blogM  .mainbar, .onPg .blogM  .mainbar{max-width:none}
+  .onPs .blogAd, .pGV, .chpN, .ntfC, .lpCo, #HTML93{max-width:var(--contentW);margin:0 auto}
+  .ntfC{margin:0 auto 20px}
+  .chpN{margin-top:30px}
+  .mainIn{padding:0}
+  .mainIn .blogCont{width:100%}
+  .onPg .blogCont, .onPs .blogPts{max-width:none;width:100%}
+  .onPs .blogM{padding-bottom:0}
+  .onIt .pEnt{margin-top:0}
+  .pS .widget{margin:0}
+  .pG-07 .secIn, .pG-07 .secIn >*, .pG-09 .secIn, .pG-09 .secIn >*{display:block}
+  .pG-07 .pgCont{border:none}
+  /*]]>*/
+</style>
+
+<div class='lPage'>
+<!--[ Landing page start ]-->
+  
+<div class='pG pG-01'>
+  <div class='pgCont'>
+    <div class='secIn pgFx'>
+      <div class='widget HTML'>
+        <div class='widget-content'>
+          <!--[ Title ]-->
+          <h2 class='title'>Welcome to Plus UI</h2>
+          <p>Plus UI is a Responsive Blogger Template with exciting and useful features.</p>
+
+          <!--[ change href='#!' atribute to add link -->
+          <div class='ln'>
+            <a class='button' href='#!' target='_blank'><i class='icon cart'></i>Get this theme</a>
+          </div>
+          <div class='ln'>
+            <label class='l' for='onChangelog'>Changelogs</label>
+            <i class='dot'></i>
+            <a class='l' href='#!'>Looking for Widgets?</a>
+          </div>
+        </div>
+      </div>
+      <div class='widget Image' data-version='2' id='Image51'>
+        <!--[ Image with link ]-->
+        <a href='#!'>
+          <img alt="Title_image_here" height="186" src="https://1.bp.blogspot.com/-cLrKHBT6Wd8/YB36esf95KI/AAAAAAAAQVI/AyWEbohoVewGFjOG66j1AqjIRVQjsqNzQCNcBGAsYHQ/s0/undraw_Landing_page.png" width="300"/>
+        </a>
+        <!--<span class='caption'>Caption_here_if_needed</span>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='pG pG-02'>
+  <div class='lpShp'>
+    <svg class='pgBr tp' preserveaspectratio='none' viewbox='0 0 1000 100'><path d='M0,6V0h1000v100L0,6z'></path></svg>
+  </div>
+  <div class='pgCont'>
+    <div class='secIn pgFx pgRw'>
+      <div class='widget HTML'>
+        <div class='content'>
+          <!--[ Title ]-->
+          <h2 class='title'>Landing Page</h2>
+          <p>We are trying to make a landing page that is easy to edit/customize by moving all the code to the Layout menu</p>
+
+          <ul>
+            <li>
+              <svg class='line' viewbox='0 0 24 24'><path d='M22 11.07V12a10 10 0 1 1-5.93-9.14'></path><polyline points='23 3 12 14 9 11'></polyline></svg>
+
+              <!--[ Text ]-->
+              <span>10+ landing page</span>
+            </li>
+            <li>
+              <svg class='line' viewbox='0 0 24 24'><path d='M22 11.07V12a10 10 0 1 1-5.93-9.14'></path><polyline points='23 3 12 14 9 11'></polyline></svg>
+
+              <!--[ Text ]-->
+              <span>Easy to customize</span>
+            </li>
+            <li>
+              <svg class='line' viewbox='0 0 24 24'><path d='M22 11.07V12a10 10 0 1 1-5.93-9.14'></path><polyline points='23 3 12 14 9 11'></polyline></svg>
+
+              <!--[ Text ]-->
+              <span>Drag and drop widget</span>
+            </li>
+            <li>
+              <svg class='line' viewbox='0 0 24 24'><path d='M22 11.07V12a10 10 0 1 1-5.93-9.14'></path><polyline points='23 3 12 14 9 11'></polyline></svg>
+
+              <!--[ Text ]-->
+              <span>Easy to change widget order</span>
+            </li>
+            <li>
+              <svg class='line' viewbox='0 0 24 24'><path d='M22 11.07V12a10 10 0 1 1-5.93-9.14'></path><polyline points='23 3 12 14 9 11'></polyline></svg>
+
+              <!--[ Text ]-->
+              <span>Responsive landing page</span>
+            </li>
+            <li>
+              <svg class='line' viewbox='0 0 24 24'><path d='M22 11.07V12a10 10 0 1 1-5.93-9.14'></path><polyline points='23 3 12 14 9 11'></polyline></svg>
+
+              <!--[ Text with link ]-->
+              <a href='#!'>More attractive feature</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class='Image'>
+        <img alt="edit_alt_here" class="lazy" data-src="https://1.bp.blogspot.com/-cLrKHBT6Wd8/YB36esf95KI/AAAAAAAAQVI/AyWEbohoVewGFjOG66j1AqjIRVQjsqNzQCNcBGAsYHQ/s0/undraw_Landing_page.png" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="/>
+
+        <!-- <span class='caption'>Caption_here_if_needed</span> -->
+      </div>
+    </div>
+  </div>
+  <div class='lpShp'>
+    <svg class='pgBr bt' preserveaspectratio='none' viewbox='0 0 1000 100'><path d='M0,6V0h1000v100L0,6z'></path></svg>
+  </div>
+</div>
+
+<div class='pG pG-03'>
+  <div class='pgCont'>
+    <div class='secIn pgFx'>
+      <div class='widget HTML'>
+        <div class='content'>
+          <!--[ Title ]-->
+          <h2 class='title'>Easier to use, <br /> Easier to edit</h2>
+        </div>
+      </div>
+
+      <div class='Content'>
+        <p>We've made every effort to make themes easier to use, with code that's cleaner and easier to understand.</p>
+        <p>The templates that we make are always updated regularly, now you can easily change the colors and some other parts easily without having to edit the HTML template.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='pG pG-04'>
+  <div class='lpShp'>
+    <svg class='pgBr tp' preserveaspectratio='none' viewbox='0 0 1000 100'><path d='M0,6V0h1000v100L0,6z'></path></svg>
+  </div>
+  <div class='pgCont'>
+    <div class='secIn pgFx pgRw'>
+      <div class='widget HTML'>
+        <div class='content'>
+          <!--[ Title ]-->
+          <h2 class='title'>Fast Loading</h2>
+          <p>Performance is a top priority in the templates we create, sites that perform well have many benefits and have more potential to be on the first page of search results.</p>
+
+          <ul class='lf'>
+            <li>
+              <svg class='line' viewbox='0 0 24 24'><path d='M22 11.07V12a10 10 0 1 1-5.93-9.14'></path><polyline points='23 3 12 14 9 11'></polyline></svg>
+
+              <!--[ Text ]-->
+              <span>Loads less than 1 second</span>
+            </li>
+            <li>
+              <svg class='line' viewbox='0 0 24 24'><path d='M22 11.07V12a10 10 0 1 1-5.93-9.14'></path><polyline points='23 3 12 14 9 11'></polyline></svg>
+
+              <!--[ Text ]-->
+              <span>Search engine optimized</span>
+            </li>
+            <li>
+              <svg class='line' viewbox='0 0 24 24'><path d='M22 11.07V12a10 10 0 1 1-5.93-9.14'></path><polyline points='23 3 12 14 9 11'></polyline></svg>
+
+              <!--[ Text ]-->
+              <span>Optimized for Speed</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class='Image'>
+        <img alt="edit_alt_here" class="lazy" data-src="https://1.bp.blogspot.com/-78TbldctH_k/YB4HDZRyd_I/AAAAAAAAQVc/nhP51AQxG9A3CD0UK6UPEfAjzAu6lkXfQCNcBGAsYHQ/s0/undraw_speed_test.png" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="/>
+
+        <!-- <span class='caption'>Caption_here_if_needed</span> -->
+      </div>
+    </div>
+  </div>
+  <div class='lpShp'>
+    <svg class='pgBr bt' preserveaspectratio='none' viewbox='0 0 1000 100'><path d='M0,6V0h1000v100L0,6z'></path></svg>
+  </div>
+</div>
+  
+<div class='pG pG-05'>
+  <div class='pgCont'>
+    <div class='secIn pgFx'>
+      <div class='widget HTML'>
+        <div class='content'>
+          <!--[ Title ]-->
+          <h2 class='title'>Easy Customization</h2>
+          <p>We are trying to make this template easier to edit, now you can directly change the colors via the Blogger Theme Designer or the Layout menu.</p>
+
+          <ul class='lf'>
+            <li>
+              <svg class='line' viewbox='0 0 24 24'><path d='M22 11.07V12a10 10 0 1 1-5.93-9.14'></path><polyline points='23 3 12 14 9 11'></polyline></svg>
+
+              <!--[ Text ]-->
+              <span>Primary Color Option</span>
+            </li>
+            <li>
+              <svg class='line' viewbox='0 0 24 24'><path d='M22 11.07V12a10 10 0 1 1-5.93-9.14'></path><polyline points='23 3 12 14 9 11'></polyline></svg>
+
+              <!--[ Text ]-->
+              <span>SVG Icon</span>
+            </li>
+            <li>
+              <svg class='line' viewbox='0 0 24 24'><path d='M22 11.07V12a10 10 0 1 1-5.93-9.14'></path><polyline points='23 3 12 14 9 11'></polyline></svg>
+
+              <!--[ Text ]-->
+              <span>Custom Widgets</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class='Image'>
+        <img alt="edit_alt_here" class="lazy" data-src="https://1.bp.blogspot.com/-BZHR9QxgdsQ/YB4IMrwqO6I/AAAAAAAAQVo/pNQYe_G-vUcpDJfap8_wmotwvjZOy9V8gCNcBGAsYHQ/s0/undraw_work_together.png" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="/>
+
+        <!-- <span class='caption'>Caption_here_if_needed</span> -->
+      </div>
+    </div>
+  </div>
+</div>
+  
+<div class='pG pG-06'>
+  <div class='lpShp'>
+    <svg class='pgBr tp' preserveaspectratio='none' viewbox='0 0 1000 100'><path d='M0,6V0h1000v100L0,6z'></path></svg>
+  </div>
+  <div class='pgCont'>
+    <div class='secIn'>
+      <div class='widget HTML'>
+        <div class='content'>
+          <!--[ Title ]-->
+          <h2 class='title'>Plus UI template advantages</h2>
+
+          <ul class='mf'>
+            <li>
+              <!--[ Icon SVG ]-->
+              <svg viewbox='0 0 48 48'><path d='M45,10H44V9a2.9,2.9,0,0,0-3-3H24V5a3,3,0,0,0-3-3H3A3,3,0,0,0,0,5V45a3,3,0,0,0,3,3H45a3,3,0,0,0,3-3V13A3,3,0,0,0,45,10ZM24,8H41a.9.9,0,0,1,1,1v1H24ZM46,45a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V5A1,1,0,0,1,3,4H21a1,1,0,0,1,1,1v5H12v2H45a1,1,0,0,1,1,1Z'></path><path d='M30,19v2h3.59l-7,7H18a1,1,0,0,0-.71.29l-6,6,1.41,1.41L18.41,30H27a1,1,0,0,0,.71-.29L35,22.41V26h2V20a1,1,0,0,0-1-1Z'></path></svg>
+          
+              <div class='t'>
+                <strong>Faster loading</strong>
+                <p>Optimized by reducing the size of templates such as compressing CSS and Javascript for faster loading</p>
+              </div>
+            </li>
+            <li>
+              <!--[ Icon SVG ]-->
+              <svg viewbox='0 0 48 48'><path d='M45,10H44V9a2.9,2.9,0,0,0-3-3H24V5a3,3,0,0,0-3-3H3A3,3,0,0,0,0,5V45a3,3,0,0,0,3,3H45a3,3,0,0,0,3-3V13A3,3,0,0,0,45,10ZM24,8H41a.9.9,0,0,1,1,1v1H24ZM46,45a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V5A1,1,0,0,1,3,4H21a1,1,0,0,1,1,1v5H12v2H45a1,1,0,0,1,1,1Z'></path><path d='M30,19v2h3.59l-7,7H18a1,1,0,0,0-.71.29l-6,6,1.41,1.41L18.41,30H27a1,1,0,0,0,.71-.29L35,22.41V26h2V20a1,1,0,0,0-1-1Z'></path></svg>
+          
+              <div class='t'>
+                <strong>SEO Friendly</strong>
+                <p>The template is designed SEO Friendly, starting from breadcrumbs that have been indexed by Google to other markup schemas</p>
+              </div>
+            </li>
+            <li>
+              <!--[ Icon SVG ]-->
+              <svg viewbox='0 0 48 48'><path d='M45,10H44V9a2.9,2.9,0,0,0-3-3H24V5a3,3,0,0,0-3-3H3A3,3,0,0,0,0,5V45a3,3,0,0,0,3,3H45a3,3,0,0,0,3-3V13A3,3,0,0,0,45,10ZM24,8H41a.9.9,0,0,1,1,1v1H24ZM46,45a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V5A1,1,0,0,1,3,4H21a1,1,0,0,1,1,1v5H12v2H45a1,1,0,0,1,1,1Z'></path><path d='M30,19v2h3.59l-7,7H18a1,1,0,0,0-.71.29l-6,6,1.41,1.41L18.41,30H27a1,1,0,0,0,.71-.29L35,22.41V26h2V20a1,1,0,0,0-1-1Z'></path></svg>
+          
+              <div class='t'>
+                <strong>Fully Responsive</strong>
+                <p>The template size is flexible to suit every screen and the layout is neatly arranged by maximizing CSS performance</p>
+              </div>
+            </li>
+            <li>
+              <!--[ Icon SVG ]-->
+              <svg viewbox='0 0 48 48'><path d='M45,10H44V9a2.9,2.9,0,0,0-3-3H24V5a3,3,0,0,0-3-3H3A3,3,0,0,0,0,5V45a3,3,0,0,0,3,3H45a3,3,0,0,0,3-3V13A3,3,0,0,0,45,10ZM24,8H41a.9.9,0,0,1,1,1v1H24ZM46,45a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V5A1,1,0,0,1,3,4H21a1,1,0,0,1,1,1v5H12v2H45a1,1,0,0,1,1,1Z'></path><path d='M30,19v2h3.59l-7,7H18a1,1,0,0,0-.71.29l-6,6,1.41,1.41L18.41,30H27a1,1,0,0,0,.71-.29L35,22.41V26h2V20a1,1,0,0,0-1-1Z'></path></svg>
+          
+              <div class='t'>
+                <strong>Optimized for ads</strong>
+                <p>Ready-to-use Adsense ad slots have been provided in locations with high click rates</p>
+              </div>
+            </li>
+            <li>
+              <!--[ Icon SVG ]-->
+              <svg viewbox='0 0 48 48'><path d='M45,10H44V9a2.9,2.9,0,0,0-3-3H24V5a3,3,0,0,0-3-3H3A3,3,0,0,0,0,5V45a3,3,0,0,0,3,3H45a3,3,0,0,0,3-3V13A3,3,0,0,0,45,10ZM24,8H41a.9.9,0,0,1,1,1v1H24ZM46,45a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V5A1,1,0,0,1,3,4H21a1,1,0,0,1,1,1v5H12v2H45a1,1,0,0,1,1,1Z'></path><path d='M30,19v2h3.59l-7,7H18a1,1,0,0,0-.71.29l-6,6,1.41,1.41L18.41,30H27a1,1,0,0,0,.71-.29L35,22.41V26h2V20a1,1,0,0,0-1-1Z'></path></svg>
+          
+              <div class='t'>
+                <strong>Easier to use</strong>
+                <p>It's very easy to change the color, width to font through Blogger Theme Designer including widget settings in the Layout menu</p>
+              </div>
+            </li>
+            <li>
+              <!--[ Icon SVG ]-->
+              <svg viewbox='0 0 48 48'><path d='M45,10H44V9a2.9,2.9,0,0,0-3-3H24V5a3,3,0,0,0-3-3H3A3,3,0,0,0,0,5V45a3,3,0,0,0,3,3H45a3,3,0,0,0,3-3V13A3,3,0,0,0,45,10ZM24,8H41a.9.9,0,0,1,1,1v1H24ZM46,45a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V5A1,1,0,0,1,3,4H21a1,1,0,0,1,1,1v5H12v2H45a1,1,0,0,1,1,1Z'></path><path d='M30,19v2h3.59l-7,7H18a1,1,0,0,0-.71.29l-6,6,1.41,1.41L18.41,30H27a1,1,0,0,0,.71-.29L35,22.41V26h2V20a1,1,0,0,0-1-1Z'></path></svg>
+          
+              <div class='t'>
+                <strong>Updated regularly</strong>
+                <p>We always update the template regularly and add features or fix some bugs that appear</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='lpShp'>
+    <svg class='pgBr bt' preserveaspectratio='none' viewbox='0 0 1000 100'><path d='M0,6V0h1000v100L0,6z'></path></svg>
+  </div>
+</div>
+  
+<div class='pG pG-07'>
+  <div class='pgCont'>
+    <div class='secIn'>
+      <div class='widget HTML'>
+        <div class='content'>
+          <!--[ Title ]-->
+          <h2 class='title'>Protect your Device!</h2>
+                    
+          <div class='pay'>
+
+            <!--[ Payment option 1 ]-->
+            <div class='pyM'>
+              <div class='pyH'>Plus</div>
+              <div class='pyP' data-currency='₹' data-text='.00'>1499</div>
+
+              <ol class='pyI'>
+                <li>5 Devices</li>
+                <li>1yr Subscription</li>
+                <li>Advanced monitoring</li>
+                <li>Easy-to-use</li>
+                <li>Automated privacy</li>
+                <li>Custom guidance</li>
+              </ol>
+
+              <div class='pyB'>
+                <label class='button ptr' for='offprc1'><i class='icon cart'></i>Buy now!</label>
+              </div>
+            </div>
+                    
+            <!--[ Payment option 2 add class dics]-->
+            <div class='pyM' data-disc='-30%'>
+              <div class='pyH'>Standard</div>
+              <div class='pyP' data-currency='₹' data-text='.00'>1299</div>
+              <i class='strike'>000</i>
+
+              <ol class='pyI'>
+                <li>3 Devices</li>
+                <li>1yr Subscription</li>
+                <li>Advanced monitoring</li>
+                <li>Easy-to-use</li>
+                <li>Automated privacy</li>
+                <li>Custom guidance</li>
+              </ol>
+
+              <div class='pyB'>
+                <label class='button ptr' for='offprc2'><i class='icon cart'></i>Buy now!</label>
+              </div>
+            </div>
+                    
+            <!--[ Payment option 3 add class dics and ds-40 ]-->
+            <div class='pyM' data-disc='-40%'>
+              <div class='pyH'>Basic</div>
+              <div class='pyP' data-currency='₹' data-text='.00'>999</div>
+              <i class='strike'>000</i>
+
+              <ol class='pyI'>
+                <li>1 Device</li>
+                <li>1yr Subscription</li>
+                <li>Advanced monitoring</li>
+                <li>Easy-to-use</li>
+                <li>Automated privacy</li>
+                <li>Custom guidance</li>
+              </ol>
+
+              <div class='pyB'>
+                <label class='button ptr' for='offprc3'><i class='icon cart'></i>Buy now!</label>
+              </div>
+            </div>
+                    
+          </div>
+      
+          <p>*Purchases can be made via Local Bank Transfer, Dana, OVO, and Jenius.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id='lPage-Bot'>
+  <div class='lpShp'>
+    <svg class='pgBr tp' preserveaspectratio='none' viewbox='0 0 1000 100'><path d='M0,6V0h1000v100L0,6z'></path></svg>
+  </div>
+  <div class='pG pG-09'>
+    <div class='pgCont'>
+      <div class='secIn'>
+        <div class='widget'>
+          <!--[ Title ]-->
+          <h2 class='title'>Common questions</h2>
+
+          <div class='content'>
+            <p>*Beberapa pertanyaan yang sering ditanyakan oleh pembeli. <a href='#!'>Selengkapnya</a></p>
+
+            <!--[ Accordion start ]-->
+            <div class='showH' itemscope='' itemtype='https://schema.org/FAQPage'>
+              <!--[ Accordion line 1 ]-->
+              <details class='ac' itemscope='' itemprop='mainEntity' itemtype='https://schema.org/Question'>
+                <summary itemprop='name'>Is this template available for WordPress?</summary>
+                <div class='aC' itemscope='' itemprop='acceptedAnswer' itemtype='https://schema.org/Answer'>
+                  <p itemprop='text'>For now the WordPress version is not available, you can only use this template for Blogger platform. But we plan to make a WP version too.</p>
+                </div>
+              </details>
+
+              <!--[ Accordion line 2 ]-->
+              <details class='ac' itemscope='' itemprop='mainEntity' itemtype='https://schema.org/Question'>
+                <summary itemprop='name'>What do I get if I buy a template here?</summary>
+                <div class='aC' itemscope='' itemprop='acceptedAnswer' itemtype='https://schema.org/Answer'>
+                  <p itemprop='text'>You will get a template bundle according to the product you purchased and can re-download it for free if there is a new version of the template.</p>
+                </div>
+              </details>
+
+              <!--[ Accordion line 3 ]-->
+              <details class='ac' itemscope='' itemprop='mainEntity' itemtype='https://schema.org/Question'>
+                <summary itemprop='name'>Is there any additional cost to get the latest version?</summary>
+                <div class='aC' itemscope='' itemprop='acceptedAnswer' itemtype='https://schema.org/Answer'>
+                  <p itemprop='text'>You only need to pay once on your first purchase and you are entitled to forever template updates.</p>
+                </div>
+              </details>
+
+              <!--[ Accordion line 4 ]-->
+              <details class='ac' itemscope='' itemprop='mainEntity' itemtype='https://schema.org/Question'>
+                <summary itemprop='name'>Can templates be resold?</summary>
+                <div class='aC' itemscope='' itemprop='acceptedAnswer' itemtype='https://schema.org/Answer'>
+                  <p itemprop='text'>No, the template can only be used for personal use. You are strictly forbidden to resell this template in any way.</p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='lpShp'>
+    <svg class='pgBr bt' preserveaspectratio='none' viewbox='0 0 1000 100'><path d='M0,6V0h1000v100L0,6z'></path></svg>
+  </div>
+</div>
+  
+</div>
+
+<!--[ Changelog ]-->
+<input class='clgI hidden' id='onChangelog' type='checkbox' />
+<div class='cLg'>
+  <label class='lgCl' for='onChangelog'></label>
+  <div class='lgCo'>
+    
+    <!--[ Changelog Heading ]-->
+    <h2>Changelogs</h2>
+    
+    <!--[ Changelog Content ]-->
+    <p>- Update: 25 Dec, 2021</p>
+    <ol>
+      <li>Changelog_content_1</li>
+      <li>Changelog_content_2</li>
+      <li>Changelog_content_3</li>
+      <li>Changelog_content_4</li>
+      <li>Changelog_content_5</li>
+      <li>Changelog_content_6</li>
+    </ol>
+    
+    <p>- Update: 01 Jan, 2022</p>
+    <ol>
+      <li>Changelog_content_1</li>
+      <li>Changelog_content_2</li>
+      <li>Changelog_content_3</li>
+      <li>Changelog_content_4</li>
+      <li>Changelog_content_5</li>
+      <li>Changelog_content_6</li>
+    </ol>
+    
+    <p class='note'>A note.</p>
+  </div>
+</div>
+
+<!--[ Purchase Box ]-->
+<input class='prcI inp-3 hidden' id='offprc3' type='checkbox'/>
+<input class='prcI inp-2 hidden' id='offprc2' type='checkbox'/>
+<input class='prcI inp-1 hidden' id='offprc1' type='checkbox'/>
+<div class='prc'>
+  <div class='prcCo'>
+    <label class='prcCl inp-3' for='offprc3'></label>
+    <label class='prcCl inp-2' for='offprc2'></label>
+    <label class='prcCl inp-1' for='offprc1'></label>
+    
+    <div class='prcDt'>
+      <h2 class='prcTt'>Protect your Device</h2>
+      <div class='prcNm' data-text='Detail' data-title=''></div>
+      <div class='prcPr' data-text='Price'><span>Rs.</span> <i data-text=''></i> <span class='paypal' data-text=''></span></div>
+      <div class='prcInfo'>*Purchases can be made through Local Bank Transfer, Paypal or Gumroad. <a href='#' target='_blank'>Detail info</a></div>
+    </div>
+    <div class='prcMt'>
+      <h2 class='prcTt'>Payment Method</h2>
+      <div class='prcLk'>
+        <!--[ Bank Transfer ]-->
+        <a class='button ln transfer' href='#' rel='noreferrer noopener' target='_blank'>
+          <svg class='line' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24'><rect height='16' rx='2' ry='2' width='22' x='1' y='4'></rect><line x1='1' x2='23' y1='10' y2='10'></line></svg>
+          <span>Bank Transfer</span>
+        </a>
+        <!--[ UPI ]-->
+        <a class='button ln upi' href='#' rel='noreferrer noopener' target='_blank'>
+          <svg xmlns='http://www.w3.org/2000/svg' viewbox='0 0 64 64'><path class='upiP1' d='M55.05 32.542L38.715 0l-18.15 64z'/><path class='upiP2' d='M43.433 32.542L27.1 0 8.95 64z'/></svg>
+          <span>UPI</span>
+        </a>
+        <span>Other method</span>
+        <!--[ PayTM ]-->
+        <a class='button ln paytm' href='#' rel='noreferrer noopener' target='_blank'>
+          <svg xmlns='http://www.w3.org/2000/svg' viewbox='0 0 48 48'><path class='paytmP1' d='M5.446 18.01H.548c-.277 0-.502.167-.503.502L0 30.519c-.001.3.196.45.465.45.735 0 1.335 0 2.07 0C2.79 30.969 3 30.844 3 30.594 3 29.483 3 28.111 3 27l2.126.009c1.399-.092 2.335-.742 2.725-2.052.117-.393.14-.733.14-1.137l.11-2.862C7.999 18.946 6.949 18.181 5.446 18.01zM4.995 23.465C4.995 23.759 4.754 24 4.461 24H3v-3h1.461c.293 0 .534.24.534.535V23.465zM13.938 18h-3.423c-.26 0-.483.08-.483.351 0 .706 0 1.495 0 2.201C10.06 20.846 10.263 21 10.552 21h2.855c.594 0 .532.972 0 1H11.84C10.101 22 9 23.562 9 25.137c0 .42.005 1.406 0 1.863-.008.651-.014 1.311.112 1.899C9.336 29.939 10.235 31 11.597 31h4.228c.541 0 1.173-.474 1.173-1.101v-8.274C17.026 19.443 15.942 18.117 13.938 18zM14 27.55c0 .248-.202.45-.448.45h-1.105C12.201 28 12 27.798 12 27.55v-2.101C12 25.202 12.201 25 12.447 25h1.105C13.798 25 14 25.202 14 25.449V27.55zM18 18.594v5.608c.124 1.6 1.608 2.798 3.171 2.798h1.414c.597 0 .561.969 0 .969H19.49c-.339 0-.462.177-.462.476v2.152c0 .226.183.396.422.396h2.959c2.416 0 3.592-1.159 3.591-3.757v-8.84c0-.276-.175-.383-.342-.383h-2.302c-.224 0-.355.243-.355.422v5.218c0 .199-.111.316-.29.316H21.41c-.264 0-.409-.143-.409-.396v-5.058C21 18.218 20.88 18 20.552 18c-.778 0-1.442 0-2.22 0C18.067 18 18 18.263 18 18.594L18 18.594z'/><path class='paytmP2' d='M27.038 20.569v-2.138c0-.237.194-.431.43-.431H28c1.368-.285 1.851-.62 2.688-1.522.514-.557.966-.704 1.298-.113L32 18h1.569C33.807 18 34 18.194 34 18.431v2.138C34 20.805 33.806 21 33.569 21H32v9.569C32 30.807 31.806 31 31.57 31h-2.14C29.193 31 29 30.807 29 30.569V21h-1.531C27.234 21 27.038 20.806 27.038 20.569L27.038 20.569zM42.991 30.465c0 .294-.244.535-.539.535h-1.91c-.297 0-.54-.241-.54-.535v-6.623-1.871c0-1.284-2.002-1.284-2.002 0v8.494C38 30.759 37.758 31 37.461 31H35.54C35.243 31 35 30.759 35 30.465V18.537C35 18.241 35.243 18 35.54 18h1.976c.297 0 .539.241.539.537v.292c1.32-1.266 3.302-.973 4.416.228 2.097-2.405 5.69-.262 5.523 2.375 0 2.916-.026 6.093-.026 9.033 0 .294-.244.535-.538.535h-1.891C45.242 31 45 30.759 45 30.465c0-2.786 0-5.701 0-8.44 0-1.307-2-1.37-2 0v8.44H42.991z'/></svg>
+          <span>PayTM</span>
+        </a>
+        <!--[ Paypal ]-->
+        <a class='button ln paypal' href='#' rel='noreferrer noopener' target='_blank'>
+          <svg xmlns='http://www.w3.org/2000/svg' viewbox='0 0 32 32'><g><path d='M26.28,9.58A6.64,6.64,0,0,0,19.65,3H10a1,1,0,0,0-1,.84L5.58,25.29a1,1,0,0,0,.23.8,1,1,0,0,0,.76.36H10.7l-.22,1.39a1,1,0,0,0,1,1.16h4.65a1,1,0,0,0,1-.83l1-6.11h3.15a7.46,7.46,0,0,0,7.43-7.45v-.28A5.87,5.87,0,0,0,26.28,9.58ZM10.85,5h8.8a4.64,4.64,0,0,1,4.51,3.61,5.68,5.68,0,0,0-1.32-.15H14.5a1,1,0,0,0-1,.84L12.91,13a1,1,0,0,0,2,.32l.46-2.88h7.49a3.87,3.87,0,0,1,1.4.27,6.47,6.47,0,0,1-6.4,5.69H13.22a1,1,0,0,0-1,.83L11,24.45H7.74Zm15.86,9.61a5.46,5.46,0,0,1-5.43,5.45h-4a1,1,0,0,0-1,.83l-1,6.11H12.64l.22-1.39h0l1.2-7.19h3.78A8.46,8.46,0,0,0,26,12.1a3.82,3.82,0,0,1,.71,2.23Z'/></g></svg>
+          <span>Paypal</span>
+        </a>
+        <!--[ Gumroad ]-->
+        <a class='button ln gumroad' href='#' rel='noreferrer noopener' target='_blank' style='cursor:not-allowed'>
+          <svg xmlns='http://www.w3.org/2000/svg' viewbox='0 0 512 512'><path d='M337.6,321.5c29,0,29,43.4,0,43.4C308.7,364.9,308.7,321.5,337.6,321.5z M455,23.7c28.9,0,28.9,43.4,0,43.4   C426,67.1,426,23.7,455,23.7z M70.8,66.3h343.8c7.8,15.1,23.3,24.6,40.3,24.6c25.1,0,45.4-20.3,45.4-45.4C500.4,20.3,480.1,0,455,0 c-19,0-35.3,11.7-42.1,28.3H70.8c-33.2,0-59.2,25.2-59.2,57.4v366c0,32.7,27.2,60.3,59.2,60.3h366c32.3,0,58.4-27,58.4-60.3V234.6 c0-32.7-26.2-59.2-58.4-59.2H219.7c-33.2,0-61.2,27.2-61.2,59.2v68.3c0,31.7,27.4,57.4,61.2,57.4h75.8c6.9,17.2,23.6,28.3,42,28.3 c25.1,0,45.4-20.3,45.4-45.4c0-25.1-20.3-45.4-45.4-45.4c-16.9,0-32.5,9.5-40.3,24.6h-77.6c-11.2,0-23.2-7.4-23.2-19.5v-68.2 c0-11.2,11.1-21.3,23.2-21.3h217.1c11.5,0,20.5,9.4,20.5,21.3v217.2c0,12.1-9.4,22.3-20.5,22.3h-366c-11.3,0-21.3-10.5-21.3-22.3 v-366C49.5,74.7,58.8,66.3,70.8,66.3L70.8,66.3z'/></svg>
+          <span>Gumroad</span>
+        </a>
+      </div>
+      <div class='prcCf'>Already made a payment? <a href='#'>Confirm here</a></div>
+    </div>
+  </div>
+  <label class='fCls inp-3' for='offprc3'></label>
+  <label class='fCls inp-2' for='offprc2'></label>
+  <label class='fCls inp-1' for='offprc1'></label>
+</div>
+
+<!--[ Additional Contents ]-->
+<div class='lpCo'>
+  <p>Lorem ipsum dolor sit amet. Eum eveniet voluptas amet quas ut magni quia? Sed numquam ducimus qui aperiam cupiditate ut libero excepturi rem architecto consequatur.</p>
+</div>
+
+<style>
+  /*<![CDATA[*/
+  .prcCl.inp-2, .prcCl.inp-3{display:none}
+  .prcI.inp-2:checked ~ .prc, .prcI.inp-2:checked ~ .prc .fCls.inp-2,
+  .prcI.inp-3:checked ~ .prc, .prcI.inp-3:checked ~ .prc .fCls.inp-3{opacity:1;visibility:visible}
+  .prcI.inp-2:checked ~ .prc .fCls.inp-1,
+  .prcI.inp-3:checked ~ .prc .fCls.inp-1,
+  .prcI.inp-3:checked ~ .prc .fCls.inp-2{visibility:hidden;opacity:0}
+  .prcI.inp-2:checked ~ .prc .prcCl.inp-2,
+  .prcI.inp-3:checked ~ .prc .prcCl.inp-3{display:flex}
+  .prcI.inp-2:checked ~ .prc .prcCl.inp-1,
+  .prcI.inp-3:checked ~ .prc .prcCl.inp-1,
+  .prcI.inp-3:checked ~ .prc .prcCl.inp-2{display:none}
+  /* Price List */
+  .prcI.inp-1:checked ~ .prc .prcNm::after{content:'McAfee\00ae LiveSafe - PLUS'}
+  .prcI.inp-1:checked ~ .prc .prcPr i::before{content:'1499'}
+  .prcI.inp-1:checked ~ .prc .prcPr span.paypal::after{content:'19.29'}
+  .prcI.inp-2:checked ~ .prc .prcNm::after{content:'McAfee\00ae LiveSafe - STANDARD'}
+  .prcI.inp-2:checked ~ .prc .prcPr i::before{content:'1299'}
+  .prcI.inp-2:checked ~ .prc .prcPr span.paypal::after{content:'16.69'}
+  .prcI.inp-3:checked ~ .prc .prcNm::after{content:'McAfee\00ae LiveSafe - BASIC'}
+  .prcI.inp-3:checked ~ .prc .prcPr i::before{content:'999'}
+  .prcI.inp-3:checked ~ .prc .prcPr span.paypal::after{content:'12.79'}
+  
+  /* UPI */
+  .prcLk .upi svg{height:18px}
+  .prcLk .upi svg .upiP1{fill:#097939;stroke:none}
+  .prcLk .upi svg .upiP2{fill:#ed752e;stroke-width:3;stroke:#fefefe}
+  @media screen and (max-width:480px){.prcLk .upi svg .upiP2{stroke:#f1f1f0}}
+  .drK .prcLk .upi svg .upiP1{fill:var(--darkT)}
+  .drK .prcLk .upi svg .upiP2{fill:var(--darkT);stroke:var(--darkBs)}
+  /* PayTM */
+  .prcLk .paytm svg{height:18px}
+  .prcLk .paytm svg .paytmP1{fill:#0d47a1;stroke:none}
+  .prcLk .paytm svg .paytmP2{fill:#00adee;stroke:none}
+  .drK .prcLk .paytm svg .paytmP1{fill:var(--darkT)}
+  .drK .prcLk .paytm svg .paytmP2{fill:var(--darkT)}
+  /*]]>*/
+</style>
