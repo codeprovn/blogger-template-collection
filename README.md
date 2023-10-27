@@ -14,7 +14,7 @@ Chào mừng bạn đến với kho lưu trữ Bộ sưu tập mẫu Blogger! T�
 -   Một số lựa chọn về mẫu Blogger miễn phí.
 -   Bạn có thể sử dụng những mẫu này mà không cần trả bất kỳ chi phí nào.
 
-### Redesigned (được thiết kế lại)
+### Redesign (thiết kế lại)
 
 -   Các mẫu đã được cải thiện hoặc thiết kế lại từ phiên bản gốc.
 -   Tìm các tính năng được nâng cao và thiết kế được cập nhật trong danh mục này.
@@ -52,24 +52,24 @@ blogger-template-collection/
 │	│	├── version2.0/
 │	│	│	├── template-v2.0-free.xml
 │
-├── redesigned/
+├── redesign/
 │	├── template1/
 │	│	├── version1.0/
-│	│	│	├── template-v1.0-redesigned.xml
+│	│	│	├── template-v1.0-redesign.xml
 │	│	├── version2.0/
-│	│	│	├── template-v2.0-redesigned.xml
+│	│	│	├── template-v2.0-redesign.xml
 │	├── template2/
 │	│	├── version1.0/
-│	│	│	├── template-v1.0-redesigned.xml
+│	│	│	├── template-v1.0-redesign.xml
 │	│	├── version2.0/
-│	│	│	├── template-v2.0-redesigned.xml
+│	│	│	├── template-v2.0-redesign.xml
 ```
 
 Hãy tham khảo thư mục con cụ thể của mỗi mẫu để biết thông tin chi tiết về từng phiên bản.
 
 ## Cách sử dụng
 
--   Chọn danh mục mẫu phù hợp với nhu cầu của bạn (Premium, Free hoặc Redesigned).
+-   Chọn danh mục mẫu phù hợp với nhu cầu của bạn (Premium, Free hoặc Redesign).
 -   Di chuyển đến thư mục con của mẫu mong muốn.
 -   Chọn phiên bản của mẫu bạn muốn sử dụng.
 -   Làm theo hướng dẫn cụ thể trong thư mục con của mẫu để cài đặt và sử dụng.
