@@ -1,0 +1,111 @@
+<div class='separator'>
+  <img alt='img_alt_here' src='https://blogger.googleusercontent.com/..../s0-rw/my_product.webp' />
+</div>
+
+<!--[ Price to show in homepage ]-->
+<div class='pPric pPad' data-text='Price'>₹55,990.00</div>
+<!--more-->
+
+<!--[ Post Snippet ]-->
+<div class='hidden'>Specifications, Design, Performance, Battery</div>
+
+<style>/*<![CDATA[*/
+  /* To change Header Subtitle */
+  .headH .headSub{max-width:none}
+  .headH .headSub::before{content:"Product Post"}
+/*]]>*/</style>
+
+<div class='pInfo pPad'>
+  <div class='L'><small>Series</small><span>HP Pavilion Laptop 15-eh1101AU</span></div>
+  <div class='R'><small>Brand</small><span>HP</span></div>
+</div>
+
+<div class='pInfo pPad'>
+  <div class='L'><small>Specific Uses For Product</small><span>Multimedia</span></div>
+  <div class='R'><small>Screen Size</small><span>15.6 Inches</span></div>
+</div>
+
+<div class='pInfo pPad'>
+  <div class='L'><small>Operating System</small><span>Windows 10 Home</span></div>
+  <div class='R'><small>Human Interface Input</small><span>Touchscreen</span></div>
+</div>
+
+<div class='pInfo pPad'>
+  <div class='L'><small>CPU Manufacturer</small><span>AMD</span></div>
+  <div class='R'><small>Graphics Card Description</small><span>Integrated</span></div>
+</div>
+
+<div class='pInfo pPad'>
+  <div class='L'><small>Processor</small><span>AMD Ryzen 5 5500U</span></div>
+  <div class='R'><small>Storage</small><span>512 GB SSD</span></div>
+</div>
+
+<div class='pInfo pPad'>
+  <div class='L'><small>Memory</small><span>8 GB DDR4-3200 MHz</span></div>
+  <div class='L'><small>Special Feature</small><span>Micro-Edge Display, Thin</span></div>
+</div>
+
+<div class='pInfo pPad'>
+  <div class='R'><small>Colour</small><span>Silver</span></div>
+</div>
+
+<div class='pInfo o pPad'><small>What is in the Box?</small><span>HP Laptop, 65 W Smart AC power adapter, user manuals</span></div>
+
+<div class='pMart'>
+  <small>or Shop through your favorite '<b>Market Place</b>' :</small>
+  
+  <!--[ Change attribute href='#' to add url ]-->
+  <a title='Amazon' href='https://www.amazon.in/HP-Pavilion-Micro-Edge-Anti-Glare-15-eh1101AU/dp/B09DGCZXQB' target='_blank' rel='noopener'>
+    <img class="lazy" data-src="https://cdn.statically.io/favicons/amazon.com" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
+  </a>
+  <a title='Flipkart' href='https://www.flipkart.com/hp-pavilion-ryzen-5-hexa-core-5500u-8-gb-512-gb-ssd-windows-10-home-15-eh1101au-thin-light-laptop/p/itmbbe1a7a3f907e' target='_blank' rel='noopener'>
+    <img class="lazy" data-src="https://rukminim1.flixcart.com/www/512/512/promos/06/11/2017/3d5312be-5667-4268-9b99-dfba34266d83.png?q=100" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
+  </a>
+</div>
+
+<!--[ Active function ]-->
+<input class='tbIn hidden' id='fTabs-1' type='radio' name='postTabs' checked>
+<input class='tbIn hidden' id='fTabs-2' type='radio' name='postTabs'>
+<input class='tbIn hidden' id='fTabs-3' type='radio' name='postTabs'>
+<input class='tbIn hidden' id='fTabs-4' type='radio' name='postTabs'>
+
+<!--[ Tabs header/title, replace class attribute to class='tbHd scrlH stick' if you want to create a floating tab title ]-->
+<div class='tbHd scrlH'>
+  <!--[ Change atribute data-text='...' to replace tabs title ]-->
+  <label for='fTabs-1' data-text='Processor'></label>
+  <label for='fTabs-2' data-text='Display'></label>
+  <label for='fTabs-3' data-text='Audio'></label>
+  <label for='fTabs-4' data-text='Battery'></label>
+</div>
+
+<div class='tbCn'>
+  <!--[ Tabs content ]-->
+  <div class='tbText-1'>
+
+    <p>AMD Ryzen 5 5500U (up to 4.0 GHz max boost clock, 8 MB L3 cache, 6 cores, 12 threads)</p>
+    <p>Live life without limits with a laptop that gets things done. Be more productive and prove your worth when you have the latest AMD Ryzen Processors, up to 16GB Dual channel 3200 DDR4 memory, and AMD Raedon graphics to embraces your switches between games, entertainment, and creative work, so seamlessly. Experience powerful performance and seamless computing for your everyday tasks. That includes improved productivity, smooth streaming, and brilliant Full HD entertainment with immersive, anti-glare display. Also, get a huge performance advantage with SSDs — they’re faster to start up, faster to shut down, and faster to transfer data.</p>
+
+  </div>
+
+  <!--[ Tabs content ]-->
+  <div class='tbText-2'>
+
+    <p>39.6 cm (15.6") diagonal, FHD (1920 x 1080), IPS, micro-edge, BrightView, 250 nits, 45% NTSC</p>
+    <p>With its superior color ranging capabilities, this laptop ensures stunning display of colors on its FHD IPS display. Ease of access and a completely comfortable design allows you to maximize your machine’s potential. A compact laptop that brings life the visual experience with FHD, and Micro Edge bezel. A laptop with larger screen-to-body ratio, and Micro-edge bezels that maximize your view and make sure that you have crystal clear graphics and also a larger screen to enjoy your favourite videos.</p>
+
+  </div>
+
+  <!--[ Tabs content ]-->
+  <div class='tbText-3'>
+
+    <p>Experience rich and authentic audio through the Bang &amp; Olufsen Play. Each sound enriched to immerse you in a sound that takes you away. Combining it with the Dual HP Speakers &amp; HP Audio Boost, brings to life each note and sound, be it when you’re listening to music or watching a movie.</p>
+
+  </div>
+  
+  <!--[ Tabs content ]-->
+  <div class='tbText-4'>
+
+    <p>Worried about your power going down while travelling for long hours? Keep your worries aside and get the HP Pavilion laptop that comes with super-fast battery charging. Enjoy a faster, smoother, and amazingly responsive computing experience that lets you do all your tasks on-the-go without any worries. Built with a battery that smartly adapts to the system demands, you are sure to be offered the best possible performance. HP Adaptive Battery Fast Charges in less time w/ 43WH adapter- 50% in 30 min will allows you to get more hours back in less time.</p>
+
+  </div>
+</div>

@@ -1,0 +1,53 @@
+<div id='postSplit'>
+  <table class='tr-caption-container'>
+    <tbody>
+      <tr>
+        <td>
+          <img alt="Split Post - Split Article Into Several Pages" src="https://4.bp.blogspot.com/..../s0-rw/my_image.webp"/>
+        </td>
+      </tr>
+      <tr>
+        <td class='tr-caption'>Berguna untuk membagi artikel menjadi beberapa halaman</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h2>Sample text to extend content</h2>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum dignissim diam, et efficitur felis commodo et. Mauris vel diam pellentesque lorem lacinia luctus. Nulla quam magna, pharetra in ultrices at, condimentum id tellus. Sed suscipit sapien sed turpis ultrices viverra. Ut quis dui sed odio sollicitudin fermentum. Aliquam vitae metus laoreet, dapibus enim sit amet, feugiat lorem. Sed in dui purus.</p>
+
+  <p>Morbi turpis arcu, eleifend a tortor quis, sagittis dapibus ipsum. Vestibulum in imperdiet arcu, eget fringilla libero. Aenean commodo, felis id fermentum pellentesque, risus elit efficitur augue, at lobortis libero ipsum quis nulla. Suspendisse imperdiet magna at tellus feugiat rhoncus. Donec in massa vitae quam lobortis cursus. Donec tincidunt interdum ex ut finibus.</p>
+
+  <p>Praesent at dui scelerisque, laoreet justo eu, egestas justo. Nullam dapibus, dolor quis blandit suscipit, massa odio hendrerit neque, at fermentum dolor tellus ac justo. Cras placerat sit amet libero sit amet rhoncus. Aenean ultrices vitae erat ut malesuada. Vivamus fringilla mollis leo, ut tempus nibh feugiat sollicitudin. Phasellus sodales maximus turpis, eget sollicitudin tortor volutpat ac.</p>
+
+  <p>In imperdiet ultrices iaculis. Proin consequat, massa ut hendrerit lacinia, eros nibh finibus justo, ut consectetur nibh orci vitae massa. Ut sodales lobortis sollicitudin. Phasellus eget mi dictum neque mollis vehicula. Vestibulum et dolor accumsan, volutpat est quis, posuere tortor. Maecenas euismod turpis eu metus elementum tempor. Pellentesque in ullamcorper massa. Pellentesque lectus ipsum, dignissim nec ornare et, laoreet eget ex. Duis convallis lorem vitae consequat mattis. Aenean dui lectus, auctor eu dui et, gravida pellentesque velit. In vitae justo lacus. Vivamus id imperdiet sapien. Mauris non maximus purus. Nulla facilisi.</p>
+  
+  <!--nextpage-->
+  <p>Curabitur quis vestibulum arcu, at aliquet urna. Aenean ex risus, rhoncus vitae urna accumsan, congue aliquet tortor. Suspendisse imperdiet nibh eget odio posuere maximus. Integer vitae neque ante. Donec pellentesque dictum diam, a luctus lectus ultrices vitae.</p>
+      
+  <p>Donec pretium dui erat, a maximus nunc dapibus sed. Nulla malesuada lectus a felis malesuada pretium. Nulla sit amet augue in neque rhoncus commodo ac nec nibh. Duis semper eleifend mauris, vel tristique velit bibendum sit amet. Mauris vitae justo eu nisl scelerisque condimentum eget eu mi.</p>
+
+  <p>Nullam non sapien sit amet ex consequat tempor ut nec risus. Phasellus non justo eget ex faucibus mattis. Vivamus vestibulum interdum consectetur. Morbi pulvinar ut lectus eu semper. Ut et sagittis leo. Pellentesque vitae posuere orci. Praesent sit amet egestas tortor, vel consectetur nulla. Duis feugiat consectetur nisl.</p>
+      
+  <p>Nunc interdum a sapien sed commodo. Maecenas porttitor dictum mi quis luctus. Vestibulum turpis quam, laoreet in dignissim dapibus, ullamcorper in tortor. Morbi malesuada massa sapien, sagittis ullamcorper quam pharetra ultrices.</p>
+
+  <p>Donec laoreet fringilla mattis. Proin vitae scelerisque neque, nec imperdiet sem. Aliquam pellentesque euismod eros, eget pharetra est vehicula eu. Nulla ligula orci, pellentesque sed quam vel, posuere sodales neque. Nulla turpis justo, lobortis vel imperdiet ut, viverra id nunc. Aliquam ipsum lectus, rutrum vel blandit sed, commodo ut ligula.</p>
+      
+  <p>Ut in condimentum eros. Duis in elit ultricies, molestie metus ac, dapibus augue. Pellentesque eu feugiat risus, sed rhoncus urna. Quisque viverra tellus nec placerat ullamcorper. Sed nec volutpat est, at pharetra mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi eu ultrices metus. Morbi placerat tempus nibh nec ultricies.</p>
+  
+  <!--nextpage-->
+  <p>Proin finibus aliquam suscipit. Mauris malesuada ornare sollicitudin. Sed faucibus lacinia pharetra. Nunc ultrices neque eget accumsan dignissim. Fusce efficitur ultricies volutpat. Maecenas ut mauris in dui pretium eleifend eu at purus. Etiam pretium luctus massa eget condimentum. Morbi gravida, elit at molestie rutrum, ligula est accumsan nunc, fringilla suscipit orci ligula vel est.</p>
+      
+  <p>Aliquam auctor cursus lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non porttitor ligula, vitae ultricies nisl. Phasellus quis arcu arcu. Praesent at nunc faucibus, sagittis ipsum non, egestas magna. Nam enim eros, fermentum nec odio vitae, blandit molestie lorem. Pellentesque sed mattis elit.</p>
+
+  <p>Donec vulputate id nisi ut pharetra. Nunc et risus lorem. Praesent in lectus nulla. Cras convallis odio eros, consectetur tristique turpis dictum feugiat. Aenean leo sem, blandit quis ante eu, tempus laoreet nisi. Duis in tincidunt lacus. Donec ornare ac nisl nec convallis. Etiam interdum ipsum nisl, sollicitudin luctus quam sollicitudin quis.</p>
+      
+  <p>Ut ipsum libero, cursus vel scelerisque eget, elementum quis velit. Donec quis velit at ex faucibus cursus. Nulla at erat sed leo consectetur auctor sed dignissim est. Maecenas nec gravida dui. Maecenas non nisi nibh. Nunc viverra nisl sed risus sagittis vulputate. Quisque egestas eros non ornare mollis. Nunc ornare viverra nibh vitae faucibus.</p>
+
+  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In eget porta sapien. Donec eu sapien egestas, blandit sem in, consectetur neque. Cras quis diam id ipsum volutpat pretium vulputate sit amet dolor. Nunc quis tortor scelerisque, egestas lectus vitae, auctor augue. Proin sit amet efficitur tellus, et lacinia lorem.</p>
+      
+  <p>Etiam lacus mauris, mattis ut sagittis et, suscipit ac elit. Nulla vitae luctus leo. Vivamus sit amet est vitae nisi vulputate iaculis vitae in lorem. Nullam lectus lectus, luctus vitae ante ut, finibus ultricies eros. Aenean quis rhoncus nibh. Ut nibh massa, venenatis id neque quis, sodales semper lorem. Mauris feugiat elementum arcu, eu rutrum erat congue quis. Nam lacinia orci id facilisis aliquet. Vestibulum tellus elit, feugiat nec sem ac, gravida interdum augue. Donec ligula augue, viverra eu odio sit amet, tempor euismod augue.</p>
+</div>
+
+<!--[ Split Post javascript ]-->
+<script>/*<![CDATA[*/ document.addEventListener('DOMContentLoaded', function() {function checkChildren(nodes, elemId){for(i=0;i<nodes.length;i++){if(nodes[i].id==elemId){return nodes[i];}else{return checkChildren(nodes[i].children, elemId);}}} function isNumeric(value) {var type = typeof value; return (type === 'number' || type === 'string') && !Number.isNaN(value - Number.parseFloat(value));} var nodes = document.querySelector('div.postBody').children; var splitdong = checkChildren(nodes, 'postSplit').innerHTML; var content = splitdong.split('<!--nextpage-->'); var url = window.location.href; var url = url.split('?page='); var no = url[1] + '&m=4'; var no = no.split('m'); var no = no[0]; var no = no.replace('&', ''); var url = url[0]; var i = 1; if( !isNumeric(no) ){var no = 1;} document.getElementById('postSplit').innerHTML = content[no-1]; if( content.length > 1 ) {document.getElementById('postSplit').innerHTML += "<div class='blogPg' id='postPager'><span class='page current'>Pages :</span></div>";} if( no>1 ){document.getElementById('postPager').innerHTML += "<!-- <a href='"+url+"?page="+(no-1)+"' title='Previous Page'>Prev</a> -->";} content.forEach(function(item) { if( no == i ){document.getElementById('postPager').innerHTML += "<span class='current'>"+i+"</span>";} else {document.getElementById('postPager').innerHTML += "<a href='"+url+"?page="+i+"'>"+i+"</a>";} i++; }); if(content.length > no){ var nn = parseInt(no) + 1; document.getElementById('postPager').innerHTML += "<a href='"+url+"?page="+nn+"'>Next</a>";} }); /*]]>*/</script>
